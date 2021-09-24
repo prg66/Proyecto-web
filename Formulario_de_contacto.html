@@ -14,230 +14,81 @@
                     <li><a href="Error_404.html">Medicinas y suplementos</a></li>
                     <li><a href="Error_404.html">Pruebas médicas</a></li>
                     <li><a href="Error_404.html">Videos y multimedia</a></li>
+                    <li><a href="Formulario_de_contacto.html">Contacta con nosotros</a></li>
                 </ul>
             </nav>
         </div>
-        <!--
+        
+        <div class="formulario">
             
-            
-            Sexo: tres botones de radio para seleccionar hombre, mujer u otro.
-            Correo electrónico: un cuadro de texto para introducir una dirección de correo electrónico.
-            Deseo recibir más información: una casilla de verificación.-->
-        <div>
-            <h1>Formulario de contacto</h1>
             <p>Introduzca los siguientes datos para que podamos ponernos en contacto con usted.</p>
-            
-            <p>
-                <label for="asunto">Nombre:</label>
-                <input type="text" id="asunto">
-                <strong><abbr title="Requerido">*</abbr></strong>
-            </p>
-
-            <p>
-                <label for="comentario">Mensaje:</label>
-                <textarea id="comentario"></textarea>
-                <strong><abbr title="Requerido">*</abbr></strong>
-            </p>
-
-            <p>
-                <label for="profesion"> Soy: </label>
-                <select id="profesion">Paciente, Científico, Médico, Educador, Fabricante,
-                    Periodista
-                    <option value="Paciente">Paciente</option>
-                    <option value="Científico">Científico</option>
-                    <option value="Médico">Médico</option>
-                    <option value="Educador">Educador</option>
-                    <option value="Fabricante">Fabricante</option>
-                    <option value="Periodista">Periodista</option>
-                </select>
-            </p>
-
-            <p>
-                <label for=fecha>Fecha de nacimiento: </label>
-                <input type="date" id="fecha" placeholder="mm/dd/yyyy">
-                <strong><abbr title="required">*</abbr></strong>
-            </p>
-            <form>
-              <fieldset><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
-                <legend>Sexo</legend>
-                <p>
-                  <input type="radio" name="size" id="size_1" value="small">
-                  <label for="size_1">Hombre</label>
-                </p>
-                <p>
-                  <input type="radio" name="size" id="size_2" value="medium">
-                  <label for="size_2">Mujer</label>
-                </p>
-                <p>
-                  <input type="radio" name="size" id="size_3" value="large">
-                  <label for="size_3">Otro</label>
-                </p>
-              </fieldset>
-            </form>
-            
-
-
-
-
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
-
-            <!--<section>
-                <h2>Contact information</h2>
+            <form action="Info_recibida.html">
                 <fieldset>
-                  <legend>Title</legend>
-                  <ul>
-                      <li>
-                        <label for="title_1">
-                          <input type="radio" id="title_1" name="title" value="K" >
-                          King
-                        </label>
-                      </li>
-                      <li>
-                        <label for="title_2">
-                          <input type="radio" id="title_2" name="title" value="Q">
-                          Queen
-                        </label>
-                      </li>
-                      <li>
-                        <label for="title_3">
-                          <input type="radio" id="title_3" name="title" value="J">
-                          Joker
-                        </label>
-                      </li>
-                  </ul>
+                    <legend><h1>Formulario de contacto</h1></legend>
+                    <p>
+                        <label for="asunto">Nombre:</label>
+                        <input type="text" id="asunto">
+                        <strong><abbr title="Requerido">*</abbr></strong>
+                    </p>
+
+                    <p>
+                        <label for="comentario">Mensaje:</label>
+                        <textarea id="comentario"></textarea>
+                        <strong><abbr title="Requerido">*</abbr></strong>
+                    </p>
+
+                    <p>
+                        <label for="profesion"> Soy: </label>
+                        <select id="profesion">Paciente, Científico, Médico, Educador, Fabricante,
+                            Periodista
+                            <option value="Paciente">Paciente</option>
+                            <option value="Científico">Científico</option>
+                            <option value="Médico">Médico</option>
+                            <option value="Educador">Educador</option>
+                            <option value="Fabricante">Fabricante</option>
+                            <option value="Periodista">Periodista</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for=fecha>Fecha de nacimiento: </label>
+                        <input type="date" id="fecha" placeholder="mm/dd/yyyy">
+                        <strong><abbr title="required">*</abbr></strong>
+                    </p>
+
+                    <fieldset><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
+                        <legend>Sexo</legend>
+                        <p>
+                        <input type="radio" name="size" id="hombre" value="hombr">
+                        <label for="hombre">Hombre</label>
+                        </p>
+                        <p>
+                        <input type="radio" name="size" id="mujer" value="mujer">
+                        <label for="mujer">Mujer</label>
+                        </p>
+                        <p>
+                        <input type="radio" name="size" id="otro" value="otro">
+                        <label for="otro">Otro</label>
+                        </p>
+                    </fieldset>
+                    
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                        <strong><abbr title="Requerido">*</abbr></strong>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="acuerdo" name="acuerdo" value="acuerdo">
+                        <label for="acuerdo">Deseo recibir más información</label>
+                    </p>
+
+                    <p>
+                        <button type="submit" >Enviar</button>
+                    </p>
                 </fieldset>
-
-                <section>
-                    <p>
-                      <button type="submit">Validate the payment</button>
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Payment information</h2>
-                    <p>
-                      <label for="card">
-                        <span>Card type:</span>
-                      </label>
-                      <select id="card" name="usercard">
-                        <option value="visa">Visa</option>
-                        <option value="mc">Mastercard</option>
-                        <option value="amex">American Express</option>
-                      </select>
-                    </p>
-                    <p>
-                      <label for="number">
-                        <span>Card number:</span>
-                        <strong><abbr title="required">*</abbr></strong>
-                      </label>
-                      <input type="tel" id="number" name="cardnumber">
-                    </p>
-                    <p>
-                      <label for="date">
-                        <span>Expiration date:</span>
-                        <strong><abbr title="required">*</abbr></strong>
-                        <em>formatted as mm/dd/yyyy</em>
-                      </label>
-                      <input type="date" id="date" name="expiration">
-                    </p>
-                </section>
-
-                <p>
-                  <label for="name">
-                    <span>Name: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="text" id="name" name="username">
-                </p>
-                <p>
-                  <label for="mail">
-                    <span>E-mail: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="email" id="mail" name="usermail">
-                </p>
-                <p>
-                  <label for="pwd">
-                    <span>Password: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="password" id="pwd" name="password">
-                </p>
-            </section>-->
-            
-            <form><!--Ejemplo de formulario con cajas de texto libre-->
-                <ul>
-                    <li>
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                        <label for="mail">Correo electrónico:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                        <label for="msg">Mensaje:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                </ul>
             </form>
-        </div>
-
-        <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
-
-        <!-- So this: -->
-        <div>
-          <label for="username">Name:</label>
-          <input id="username" type="text" name="username">
-          <label for="username"><abbr title="required" aria-label="required">*</abbr></label>
-        </div>
-        
-        <!-- would be better done like this: -->
-        <div>
-          <label for="username">
-            <span>Name:</span>
-            <input id="username" type="text" name="username">
-            <abbr title="required" aria-label="required">*</abbr>
-          </label>
-        </div>
-        
-        <!-- But this is probably best: -->
-        <div>
-          <label for="username">Name: <abbr title="required" aria-label="required">*</abbr></label>
-          <input id="username" type="text" name="username">
-        </div>
-
-        <form>
-            <p>
-              <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
-              <label for="taste_1">I like cherry</label>
-            </p>
-            <p>
-              <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
-              <label for="taste_2">I like banana</label>
-            </p>
-          </form>
-
-        <form>
-            <fieldset><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
-              <legend>Sexo</legend>
-              <p>
-                <input type="radio" name="size" id="size_1" value="small">
-                <label for="size_1">Hombre</label>
-              </p>
-              <p>
-                <input type="radio" name="size" id="size_2" value="medium">
-                <label for="size_2">Mujer</label>
-              </p>
-              <p>
-                <input type="radio" name="size" id="size_3" value="large">
-                <label for="size_3">Otro</label>
-              </p>
-            </fieldset>
-          </form>
-        
+            
         <footer>
             <h5>Mario Amorós Rivera</h5>
             <h5>Pablo Rocamora García</h5>
@@ -247,9 +98,5 @@
             <br>
             <img src="logo-ua.jpg" alt="foto de logo de página" width="259" height="44"/>
         </footer>
-        
-
     </body>
-
-
 </html>
