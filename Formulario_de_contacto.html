@@ -57,23 +57,23 @@
                 <input type="date" id="fecha" placeholder="mm/dd/yyyy">
                 <strong><abbr title="required">*</abbr></strong>
             </p>
-            
-           
-            <legend>Sexo</legend>
-            <p>
-                <input type="radio" id="hombre" value="Hombre">
-                <label for="hombre">Hombre</label>
-            </p>
-            <p>
-                <input type="radio" id="mujer" value="Mujer">
-                <label for="mujer">Mujer</label>
-            </p>
-                
-            <p>
-                <input type="radio" id="otro" value="Otro">
-                <label for="otro">Otro</label>
-            </p>
-
+            <form>
+              <fieldset><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
+                <legend>Sexo</legend>
+                <p>
+                  <input type="radio" name="size" id="size_1" value="small">
+                  <label for="size_1">Hombre</label>
+                </p>
+                <p>
+                  <input type="radio" name="size" id="size_2" value="medium">
+                  <label for="size_2">Mujer</label>
+                </p>
+                <p>
+                  <input type="radio" name="size" id="size_3" value="large">
+                  <label for="size_3">Otro</label>
+                </p>
+              </fieldset>
+            </form>
             
 
 
@@ -222,18 +222,18 @@
 
         <form>
             <fieldset><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
-              <legend>Fruit juice size</legend>
+              <legend>Sexo</legend>
               <p>
                 <input type="radio" name="size" id="size_1" value="small">
-                <label for="size_1">Small</label>
+                <label for="size_1">Hombre</label>
               </p>
               <p>
                 <input type="radio" name="size" id="size_2" value="medium">
-                <label for="size_2">Medium</label>
+                <label for="size_2">Mujer</label>
               </p>
               <p>
                 <input type="radio" name="size" id="size_3" value="large">
-                <label for="size_3">Large</label>
+                <label for="size_3">Otro</label>
               </p>
             </fieldset>
           </form>
