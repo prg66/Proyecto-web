@@ -7,14 +7,14 @@
     </head>
     <body>
         <div class="cabecera">
-            <a href="../index.html"><img src="../imagenes/Logo_web_p.png" alt="Imagen del logo de la web" width="400" height="93"/></a><!--Imagen del encabezado de la web-->
+            <a href="../index.html"><img src="../imagenes/Logo_cabecera_TEM.png" alt="Imagen del logo de la web" width="400" height="93"/></a><!--Imagen del encabezado de la web-->
             <nav class="barra_superior_navegacion"><!--Barra de navegacion por la pagina-->
                 <ul>
-                    <li><a href="../../error/Error_404.html">Temas de salud</a></li>
-                    <li><a href="../../error/Error_404.html">Medicinas y suplementos</a></li>
-                    <li><a href="../../error/Error_404.html">Pruebas médicas</a></li>
-                    <li><a href="../../error/Error_404.html">Videos y multimedia</a></li>
-                    <li><a href="../../forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
+                    <li><a href="../error/Error_404.html">Temas de salud</a></li>
+                    <li><a href="../error/Error_404.html">Medicinas y suplementos</a></li>
+                    <li><a href="../forms/Form.html">Búsqueda avanzada</a></li>
+                    <li><a href="../error/Error_404.html">Videos y multimedia</a></li>
+                    <li><a href="../forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,19 +26,22 @@
                 <fieldset>
                     <legend><h1>Formulario de contacto</h1></legend>
                     <p>
-                        <label for="asunto">Nombre:</label>
-                        <input type="text" id="asunto">
+                        <label for="asunto">Nombre</label>
+                        <br>
+                        <input type="text" id="asunto" required>
                         <strong><abbr title="Requerido">*</abbr></strong>
                     </p>
 
                     <p>
-                        <label for="comentario">Mensaje:</label>
-                        <textarea id="comentario"></textarea>
+                        <label for="comentario">Mensaje</label>
+                        <br>
+                        <textarea id="comentario" required></textarea>
                         <strong><abbr title="Requerido">*</abbr></strong>
                     </p>
 
                     <p>
-                        <label for="profesion"> Soy: </label>
+                        <label for="profesion"> Soy</label>
+                        <br>
                         <select id="profesion">Paciente, Científico, Médico, Educador, Fabricante,
                             Periodista
                             <option value="Paciente">Paciente</option>
@@ -51,15 +54,16 @@
                     </p>
 
                     <p>
-                        <label for=fecha>Fecha de nacimiento: </label>
-                        <input type="date" id="fecha" placeholder="mm/dd/yyyy">
+                        <label for=fecha>Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" id="fecha" placeholder="mm/dd/yyyy" required>
                         <strong><abbr title="required">*</abbr></strong>
                     </p>
 
-                    <fieldset><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
+                    <fieldset style="width: 300px;"><!--Ejemplo de formulario tipo test(marcado de una sola opcion)-->
                         <legend>Sexo</legend>
                         <p>
-                        <input type="radio" name="size" id="hombre" value="hombr">
+                        <input type="radio" name="size" id="hombre" value="hombre">
                         <label for="hombre">Hombre</label>
                         </p>
                         <p>
@@ -73,8 +77,9 @@
                     </fieldset>
                     
                     <p>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" required>
                         <strong><abbr title="Requerido">*</abbr></strong>
                     </p>
                     
@@ -90,6 +95,7 @@
             </form>
             
         <footer>
+            <hr>
             <h5>Mario Amorós Rivera</h5>
             <h5>Pablo Rocamora García</h5>
             <h5>Año 2021</h5>
