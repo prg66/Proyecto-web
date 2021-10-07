@@ -26,30 +26,30 @@
         <form action="../error/Error_de_busqueda.html">
             <!--Campos del formulario-->
             <fieldset style="background-color: #c6ffff;width: 300px;">
-                <legend><h1>Búsqueda avanzada</h1></legend>
+                <legend><h1>crear un perfil</h1></legend>
                 <p style="text-align: justify;width: 100px;">
-                    <label>Descripción</label>
-                    <input type="text" placeholder="Escriba aquí" value=""  style="width: 250px;">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Escriba aquí" value=""  style="width: 250px;" required/>
                 </p>
                 <p style="text-align: justify;width: 100px;">
-                    <label>Síntomas</label>
-                    <input type="text" placeholder="Escriba aquí" value="" style="width: 250px;">
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Escriba aquí" value=""  style="width: 250px;" required/>
                 </p>            
                 <p style="text-align: justify;width: 100px;">
-                    <label>Pruebas y exámenes</label>
-                    <input type="text" placeholder="Escriba aquí" value="" style="width: 250px;">
+                    <label>gmail</label>
+                    <input type="email" placeholder="Escriba aquí" value="" style="width: 250px;"required/>
                 </p>   
                 <p style="text-align: justify;width: 100px;">
-                    <label>Causas</label>
-                    <input type="text" placeholder="Escriba aquí" value="" style="width: 250px;">
+                    <label>dia de nacimiento</label>
+                    <input type="date" placeholder="Escriba aquí" value="" style="width: 250px;"required/>
                 </p>                  
                 <p style="text-align: justify;width: 100px;">
-                    <label>Tratamiento</label>
-                    <input type="text" placeholder="Escriba aquí" value="" style="width: 250px;">
+                    <label>Estado de salud</label>
+                    <input type="range" min="0" max="100" step="25"  value="" style="width: 250px;"required/>
                 </p>
                 <p style="text-align: justify;width: 100px;">
-                    <label>Expectativas</label>
-                    <input type="text" placeholder="Escriba aquí" value="" style="width: 250px;">
+                    <label>telefono</label>
+                    <input type="number" pattern="[0-9]{3}" placeholder="escriba aqui" aria-label="3-digit area code"/>
                 </p>
                 <p>
                     <button type="submit">Enviar</button>
@@ -57,6 +57,7 @@
             </fieldset>
             
         </form>
+    </main>
         <footer>
             <hr>
             <h5>Mario Amorós Rivera</h5>
