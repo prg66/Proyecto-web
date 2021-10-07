@@ -17,40 +17,47 @@
                     <li><a href="../forms/Form.html">Búsqueda avanzada</a></li>
                     <li><a href="../error/Error_404.html">Videos y multimedia</a></li>
                     <li><a href="../forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
-                    <li><a href="../forms/fornulario_de_perfil.html">crear perfil</a></li>
+                    <li><a href="../forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
                 </ul>
             </nav>
             <hr>
         </header>
         
-        <form action="../error/Error_de_busqueda.html">
+        <form action="Registro completado.html">
             <!--Campos del formulario-->
             <fieldset style="background-color: #c6ffff;width: 300px;">
-                <legend><h1>crear un perfil</h1></legend>
+                <legend><h1>Crear un perfil de usuario</h1></legend>
                 <p style="text-align: justify;width: 100px;">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Escriba aquí" value=""  style="width: 250px;" required/>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Escriba aquí" id="nombre" style="width: 250px;" required/>
                 </p>
+                
                 <p style="text-align: justify;width: 100px;">
-                    <label>Apellidos</label>
-                    <input type="text" placeholder="Escriba aquí" value=""  style="width: 250px;" required/>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" placeholder="Escriba aquí"  id="apellidos"  style="width: 250px;" required/>
                 </p>            
+                
                 <p style="text-align: justify;width: 100px;">
-                    <label>gmail</label>
-                    <input type="email" placeholder="Escriba aquí" value="" style="width: 250px;"required/>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Escriba aquí" id="email" style="width: 250px;"required/>
                 </p>   
-                <p style="text-align: justify;width: 100px;">
-                    <label>dia de nacimiento</label>
-                    <input type="date" placeholder="Escriba aquí" value="" style="width: 250px;"required/>
+                
+                <p style="text-align: left;width: 100px;">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" placeholder="Escriba aquí" id="fecha" style="width: 250px;"required/>
                 </p>                  
+                
                 <p style="text-align: justify;width: 100px;">
-                    <label>Estado de salud</label>
-                    <input type="range" min="0" max="100" step="25"  value="" style="width: 250px;"required/>
+                    <label for="salud">Estado de salud</label>
+                    <input type="range" min="0" max="100" step="20" id="salud" list="tickmarks" style="width: 250px;" required/>
+
                 </p>
+                
                 <p style="text-align: justify;width: 100px;">
-                    <label>telefono</label>
+                    <label>Teléfono</label>
                     <input type="number" pattern="[0-9]{3}" placeholder="escriba aqui" aria-label="3-digit area code"/>
                 </p>
+                
                 <p>
                     <button type="submit">Enviar</button>
                 </p>          
