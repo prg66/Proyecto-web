@@ -23,10 +23,9 @@
             <hr>
         </header>
         <main>
-        <form action="Registro completado.html">
+        <form action="Registro_completado.html">
             <!--Campos del formulario-->
             <fieldset style="background-color: #c6ffff;width: 300px;">
-                <legend><h1>Crear un perfil de usuario</h1></legend>
                 <p style="text-align: justify;width: 100px;">
                     <label for="nombre">Nombre</label>
                     <input type="text" placeholder="Escriba aquí" id="nombre" style="width: 250px;" required/>
@@ -39,23 +38,23 @@
                 
                 <p style="text-align: justify;width: 100px;">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Escriba aquí" id="email" style="width: 250px;"required/>
+                    <input type="email" pattern="[0-9]{3}" placeholder="Escriba aquí" id="email" style="width: 250px;" required/>
                 </p>   
                 
                 <p style="text-align: left;width: 100px;">
                     <label for="fecha">Fecha de nacimiento</label>
-                    <input type="date" placeholder="Escriba aquí" id="fecha" style="width: 250px;"required/>
+                    <input type="date"  id="fecha" style="width: 250px;" required/>
                 </p>                  
                 
                 <p style="text-align: justify;width: 100px;">
                     <label for="salud">Estado de salud</label>
-                    <input type="range" min="0" max="100" step="20" id="salud" list="tickmarks" style="width: 250px;" required/>
+                    <input type="range" min="0" max="100" step="20" id="salud"  style="width: 250px;" />
 
                 </p>
                 
                 <p style="text-align: justify;width: 100px;">
                     <label>Teléfono</label>
-                    <input type="number" pattern="[0-9]{3}" placeholder="escriba aqui" aria-label="3-digit area code"/>
+                    <input type="number" placeholder="escriba aqui" aria-label="3-digit area code"/>
                 </p>
                 
                 <p>
