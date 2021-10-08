@@ -28,9 +28,12 @@
             <fieldset style="background-color: #c6ffff;width: 300px;">
                 <p style="text-align: justify;width: 100px;">
                     <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Escriba aquí" id="nombre" style="width: 250px;" required/>
+                    <input type="text" placeholder="Escriba aquí" pattern="[A-Za-z]" id="nombre" style="width: 250px;" required/>
                 </p>
-                
+                <p style="text-align: justify;width: 100px;">
+                    <label for="nombre">contraseña</label>
+                    <input type="password" placeholder="Escriba aquí" pattern="[A-Za-z]{8}" id="nombre" style="width: 250px;" required/>
+                </p>
                 <p style="text-align: justify;width: 100px;">
                     <label for="apellidos">Apellidos</label>
                     <input type="text" placeholder="Escriba aquí"  id="apellidos"  style="width: 250px;" required/>
@@ -38,7 +41,7 @@
                 
                 <p style="text-align: justify;width: 100px;">
                     <label for="email">Email</label>
-                    <input type="email" pattern="[0-9]{3}" placeholder="Escriba aquí" id="email" style="width: 250px;" required/>
+                    <input type="email" placeholder="Escriba aquí" id="email" style="width: 250px;" required/>
                 </p>   
                 
                 <p style="text-align: left;width: 100px;">
