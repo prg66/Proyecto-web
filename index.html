@@ -2,12 +2,13 @@
 <html lang="es">
     <head>
         <title>Enciclopedia Médica | Inicio</title><!--Titulo de la pagina-->
-        <meta charset="utf-8"/><!--Codificacion e idioma del documento-->
-        <meta name="description" content="Tu sitio web de confianza para consultas sobre salud"/>
-        <meta name="keywords" content="enciclopedia, medica, medicina"/>
+        <meta charset="utf-8"/><!--Codificacion del documento-->
+        <meta name="description" content="Tu sitio web de confianza para consultas sobre salud"/><!--Breve descripcion del sitio web-->
+        <meta name="keywords" content="enciclopedia, medica, medicina"/><!--Palabras clave de la pagina-->
+        <meta name="author" content="John Doe"><!--Nombre del autor del contenido de la web-->
+        <meta http-equiv="refresh" content="30"><!--Refrescar  la pagina cada 30 segundos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Ajuste de escala para visualizacion en diferentes dispositivos-->
         <link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon"><!--Icono de la pestaña de web-->
-        
-        <!--<link rel="stylesheet" type="text/css" href="estilo.css"/>-->
     </head>
 
     <body>
@@ -28,7 +29,7 @@
         </header>
         
         <main>
-            <div class="barra_de_busqueda">
+            <section>
                 <h2>BARRA DE NAVEGACIÓN</h2>
                 <nav><!--Barra de busqueda alfabética-->
                     <ul>
@@ -59,41 +60,45 @@
                         <li><a href="error/Error_404.html">Z</a></li> 
                     </ul>
                 </nav>
-            </div>
-            <h2> Busqueda de enfermedad en cuerpo</h2>
-            <img src="imagenes/cuerpo.jpg" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
-            <map id="mapeocuerpo" name="mapeocuerpo">
-    
-                <area href="articulos/A/Accidente_cerebrovascular.html" shape="circle" coords="299,98,25" alt="cabeza / accidende cerebrovascular" />
-                <area href="articulos/B/Bronquitis.html" shape="rect" coords="249,234,275,292" alt=" pulmon / bronquitis" />
-                <area href="articulos/B/Bronquitis.html" shape="rect" coords="321,240,360,298" alt=" pulmon / bronquitis" />
-                <area href="articulos/D/Diabetes.html" shape="poly" coords="277,352,276,363,317,353" alt=" pancreas / Diabetes" />
-            </map>
-        
-            <div class="destacados">           
+            </section>
+
+            <section class="busqueda_visual">
+                <h2> Busqueda de enfermedad en cuerpo</h2>
+                <figure>
+                    <img src="imagenes/cuerpo.jpg" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
+                    <map id="mapeocuerpo" name="mapeocuerpo">
+                        <area href="articulos/A/Accidente_cerebrovascular.html" shape="circle" coords="299,98,25" alt="cabeza / accidende cerebrovascular" />
+                        <area href="articulos/B/Bronquitis.html" shape="rect" coords="249,234,275,292" alt=" pulmon / bronquitis" />
+                        <area href="articulos/B/Bronquitis.html" shape="rect" coords="321,240,360,298" alt=" pulmon / bronquitis" />
+                        <area href="articulos/D/Diabetes.html" shape="poly" coords="277,352,276,363,317,353" alt=" pancreas / Diabetes" />
+                    </map>
+                </figure>
+            </section>
+
+            <article class="destacados">           
                 <br>
                 <hr>
                 <h3>TEMAS DESTACADOS</h3>
-                <hr>
-                    <ol>
-                        <li>
-                            <h4>COVID-19</h4>
-                            <p><a href="articulos/E/Enfermedades_contagiosas.html">¿CÓMO PUEDO SABER SI MIS SINTOMAS SON COMPATIBLES CON LOS DEL COVID-19?</a></p>
-                        </li>
-                        <li>
-                            <h4>DIABETES</h4>
-                            <p><i>La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona que ayuda a que la glucosa entre a las células para suministrarles energía. En la diabetes tipo 1, el cuerpo no produce insulina.<b> Pinche  <a href="articulos/D/Diabetes.html">aquí</a> para mas información</b></i></p>
-                        </li>
+                <section>
+                    <h4>Covid-19</h4>
+                    <p><a href="articulos/E/Enfermedades_contagiosas.html">¿CÓMO PUEDO SABER SI MIS SINTOMAS SON COMPATIBLES CON LOS DEL COVID-19?¿Cómo puedo saber si mis sintomas son compatibles con el covid?</a></p>
+                    <hr>
+                </section>
+
+                <section>
+                    <h4>Diabetes</h4>
+                    <p><i>La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona que ayuda a que la glucosa entre a las células para suministrarles energía. En la diabetes tipo 1, el cuerpo no produce insulina.<b> Pinche  <a href="articulos/D/Diabetes.html">aquí</a> para mas información</b></i></p>
+                    <hr>
+                </section>
+                
+                <section>
+                    <h4>Bronquitis</h4>
+                    <p><i>Dado que la mayoría de los casos de bronquitis son causados por infecciones virales, los antibióticos no resultan eficaces. Sin embargo, si el médico sospecha que tienes una infección bacteriana, es posible que te recete un antibiótico.<b>Pinche <a href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i></p>
                     
-                    
-                        <li>
-                            <h4>Bronquitis</h4>
-                            <p><i>Dado que la mayoría de los casos de bronquitis son causados por infecciones virales, los antibióticos no resultan eficaces. Sin embargo, si el médico sospecha que tienes una infección bacteriana, es posible que te recete un antibiótico.<b>Pinche <a href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i></p>
-                        </li>
-                    
-                    </ol>
-                    <br>
-            </div>
+                </section>
+
+            </article>
+                
         </main>
         
         <footer>
