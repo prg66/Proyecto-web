@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Enciclopedia Médica | Accidente cerebrovascular</title>
-        <meta charset="UTF-8"/>
-        <meta name="description" content="Tu sitio web de confianza para consultas sobre salud"/>
-        <meta name="keywords" content="enciclopedia, medica, medicina"/>
+        <title>Enciclopedia Médica | Registrar usuario</title>
+        <meta charset="utf-8"/><!--Codificacion del documento-->
+        <meta name="description" content="Sitio web de consultas sobre temas de salud."/><!--Breve descripcion del sitio web-->
+        <meta name="keywords" content="enciclopedia, medica, medicina"/><!--Palabras clave de la pagina-->
+        <meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera"><!--Nombre del autor del contenido de la web-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Ajuste de escala para visualizacion en diferentes dispositivos-->  
         <link rel="shortcut icon" href="../imagenes/Logo_superior.png" type="image/x-icon"><!--Icono de la pestaña de web-->
     </head>
     
@@ -62,8 +64,10 @@
                             </p>
                             
                             <p style="text-align: justify;width: 100px;">
-                                <label>Teléfono</label>
-                                <input type="number" placeholder="escriba aqui" aria-label="3-digit area code"/>
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" placeholder="escriba aqui" pattern="[0-9]{9}" required/>
+                                
+                                required>
                             </p>
                             
                             <p>
