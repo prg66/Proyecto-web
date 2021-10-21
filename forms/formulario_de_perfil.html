@@ -1,135 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Enciclopedia Médica | Registrar usuario</title>
-        <meta charset="utf-8"/><!--Codificacion del documento-->
-        <meta name="description" content="Sitio web de consultas sobre temas de salud."/><!--Breve descripcion del sitio web-->
-        <meta name="keywords" content="enciclopedia, medica, medicina"/><!--Palabras clave de la pagina-->
-        <meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera"><!--Nombre del autor del contenido de la web-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Ajuste de escala para visualizacion en diferentes dispositivos-->  
-        <link rel="shortcut icon" href="../imagenes/Logo_superior.png" type="image/x-icon"><!--Icono de la pestaña de web-->
-        <style>
-            p{text-align: justify}
-        </style>
-    </head>
-    
-    <body>
-        <header>
-            <a href="../index.html"><img src="../imagenes/Logo_cabecera_TEM.png" alt="Imagen del logo de la web" width="400" height="93"/></a><!--Imagen del encabezado de la web-->
-            <nav class="barra_superior_navegacion"><!--Barra de navegacion por la pagina-->
-                <ul>
-                    <li><a href="../error/Error_404.html">Temas de salud</a></li>
-                    <li><a href="../error/Error_404.html">Medicinas y suplementos</a></li>
-                    <li><a href="../forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
-                    <li><a href="../error/Error_404.html">Videos y multimedia</a></li>
-                    <li><a href="../forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
-                    <li><a href="../forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
-                </ul>
-            </nav>
-            <hr>
-        </header>
-        
-        <main>
-            <article>
-                <section>
-                    <h1>Formulario de registro</h1>
-                    <form action="Registro_completado.html">
-                        <!--Campos del formulario-->
-                        <fieldset style="background-color: #c6ffff;width: 300px;">
-                            <p style="text-align: justify;width: 100px;">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" placeholder="Escriba aquí"  id="nombre" style="width: 250px;" required/>
-                            </p>
-                            
-                            <p style="text-align: justify;width: 100px;">
-                                <label for="contraseña">contraseña</label>
-                                <input type="password" placeholder="Escriba aquí" pattern="[A-Za-z]{8}" id="contraseña" style="width: 250px;" required/>
-                            </p>
-                            
-                            <p style="text-align: justify;width: 100px;">
-                                <label for="apellidos">Apellidos</label>
-                                <input type="text" placeholder="Escriba aquí"  id="apellidos"  style="width: 250px;" required/>
-                            </p>            
-                            
-                            <p style="text-align: justify;width: 100px;">
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="Escriba aquí" id="email" style="width: 250px;" required/>
-                            </p>   
-                            
-                            <p style="text-align: left;width: 100px;">
-                                <label for="fecha">Fecha de nacimiento</label>
-                                <input type="date"  id="fecha" style="width: 250px;" required/>
-                            </p>                  
-                            
-                            <p style="text-align: justify;width: 100px;">
-                                <label for="salud">Estado de salud</label>
-                                <input type="range" min="0" max="100" step="20" id="salud"  style="width: 250px;" />
-        
-                            </p>
-                            
-                            <p style="text-align: justify;width: 100px;">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" placeholder="escriba aqui" pattern="[0-9]{9}" required/>
-                                
-                                required>
-                            </p>
-                            
-                            <p>
-                                <button type="submit">Enviar</button>
-                            </p>          
-                        </fieldset>
-                    </form>
-                </section>
-            </article>
-        </main>
-        
-        <footer>
-            <hr>
+
+<head>
+    <title>Enciclopedia Médica | Registrar usuario</title>
+    <meta charset="utf-8" />
+    <!--Codificacion del documento-->
+    <meta name="description" content="Sitio web de consultas sobre temas de salud." />
+    <!--Breve descripcion del sitio web-->
+    <meta name="keywords" content="enciclopedia, medica, medicina" />
+    <!--Palabras clave de la pagina-->
+    <meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera">
+    <!--Nombre del autor del contenido de la web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ajuste de escala para visualizacion en diferentes dispositivos-->
+    <link rel="shortcut icon" href="../imagenes/Logo_superior.png" type="image/x-icon">
+    <!--Icono de la pestaña de web-->
+    <style>
+        p {
+            text-align: justify
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../imagenes/Logo_cabecera_TEM.png" alt="Imagen del logo de la web" width="400"
+                height="93" /></a>
+        <!--Imagen del encabezado de la web-->
+        <nav class="barra_superior_navegacion">
+            <!--Barra de navegacion por la pagina-->
+            <ul>
+                <li><a href="../error/Error_404.html">Temas de salud</a></li>
+                <li><a href="../error/Error_404.html">Medicinas y suplementos</a></li>
+                <li><a href="../forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
+                <li><a href="../error/Error_404.html">Videos y multimedia</a></li>
+                <li><a href="../forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
+                <li><a href="../forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Formulario de registro</h1>
+        <article>
             <section>
-                <address>
-                    <p>Escuela Politécnica Superior, Universidad de Alicante</p>
-                    <p>Carretera San Vicente del Raspeig s/n</p>
-                    <p>03690 San Vicente del Raspeig - Alicante</p>
-                </address>
-            
-                <figure>
-                    <img src="../imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44"/>
-                </figure>
+                <h2>Realizar registro</h2>
+                <form action="Registro_completado.html">
+                    <!--Campos del formulario-->
+                    <fieldset style="background-color: #c6ffff;width: 300px;">
+                        <legend>
+                            <h2>Formulario de perfil</h2>
+                        </legend>
+                        <p style="text-align: justify;width: 100px;">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" placeholder="Escriba aquí" id="nombre" style="width: 250px;" required />
+                        </p>
+
+                        <p style="text-align: justify;width: 100px;">
+                            <label for="contraseña">contraseña</label>
+                            <input type="password" placeholder="Escriba aquí" pattern="[A-Za-z]{8}" id="contraseña"
+                                style="width: 250px;" required />
+                        </p>
+
+                        <p style="text-align: justify;width: 100px;">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" placeholder="Escriba aquí" id="apellidos" style="width: 250px;"
+                                required />
+                        </p>
+
+                        <p style="text-align: justify;width: 100px;">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Escriba aquí" id="email" style="width: 250px;" required />
+                        </p>
+
+                        <p style="text-align: left;width: 100px;">
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" id="fecha" style="width: 250px;" required />
+                        </p>
+
+                        <p style="text-align: justify;width: 100px;">
+                            <label for="salud">Estado de salud</label>
+                            <input type="range" min="0" max="100" step="20" id="salud" style="width: 250px;" />
+
+                        </p>
+
+                        <p style="text-align: justify;width: 100px;">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" placeholder="escriba aqui" pattern="[0-9]{9}" required />
+
+                            required>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </fieldset>
+                </form>
             </section>
-            
-            
-            
-            <p>Email: contacto@tuenciclopediamedica.es</p>
-            
-            <section class="social">
-                <p>Síguenos en redes</p>
-                <figure>
-                    <img src="../imagenes/logo_facebook_esc.png" alt="Ver perfil de tuenciclopediamedica en facebook" width="77" height="50"/>
-                    <figcaption>Facebook</figcaption>
-                </figure>
-               
-                <figure>
-                    <img src="../imagenes/logo_instagram_esc.png" alt="Ver perfil de tuenciclopediamedica en instagram" width="77" height="50"/>
-                    <figcaption>Instagram</figcaption>
-                </figure>
-               
-                <figure>
-                    <img src="../imagenes/logo_linkedin_esc.png" alt="Ver perfil de tuenciclopediamedica en linkedin" width="77" height="50"/>
-                    <figcaption>LinkedIn</figcaption>
-                </figure>
-               
-                <figure>
-                    <img src="../imagenes/logo_twitter_esc.png" alt="Ver perfil de tuenciclopediamedica en twitter" width="77" height="50"/>
-                    <figcaption>Twitter</figcaption>
-                </figure>
-            </section>
-            
-            <section>
-                <p>Mario Amorós Rivera</p>
-                <p>Pablo Rocamora García</p>
-                <p>2021</p>
-                <span>Enciclopedia Médica&#169;</span>
-            </section>
-        </footer>      
-    </body>
+        </article>
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+            <p>Escuela Politécnica Superior, Universidad de Alicante</p>
+            <p>Carretera San Vicente del Raspeig s/n</p>
+            <p>03690 San Vicente del Raspeig - Alicante</p>
+        </address>
+
+        <figure>
+            <img src="../imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44" />
+        </figure>
+
+
+
+        <p>Email: contacto@tuenciclopediamedica.es</p>
+
+        <p>Síguenos en redes</p>
+        <figure>
+            <img src="../imagenes/logo_facebook_esc.png" alt="Ver perfil de tuenciclopediamedica en facebook" width="77"
+                height="50" />
+            <figcaption>Facebook</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../imagenes/logo_instagram_esc.png" alt="Ver perfil de tuenciclopediamedica en instagram"
+                width="77" height="50" />
+            <figcaption>Instagram</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../imagenes/logo_linkedin_esc.png" alt="Ver perfil de tuenciclopediamedica en linkedin" width="77"
+                height="50" />
+            <figcaption>LinkedIn</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../imagenes/logo_twitter_esc.png" alt="Ver perfil de tuenciclopediamedica en twitter" width="77"
+                height="50" />
+            <figcaption>Twitter</figcaption>
+        </figure>
+        <p>Mario Amorós Rivera</p>
+        <p>Pablo Rocamora García</p>
+        <p>2021</p>
+        <span>Enciclopedia Médica&#169;</span>
+    </footer>
+</body>
+
 </html>
