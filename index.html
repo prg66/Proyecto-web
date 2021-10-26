@@ -16,93 +16,88 @@
     <!--Ajuste de escala para visualizacion en diferentes dispositivos-->
     <link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon" />
     <!--Icono de la pestaña de web-->
-    <style>
-        p {
-            text-align: justify
-        }
-    </style>
+    <link href="estilos.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="refresh" content="5" >
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="imagenes/Logo_cabecera_TEM.png" alt="Imagen del logo de la web" width="400"
-                height="93" /></a>
-        <!--Imagen del encabezado de la web-->
-        <nav class="barra_superior_navegacion">
-            <!--Barra de navegacion por la pagina-->
-            <ul>
-                <li><a href="error/Error_404.html">Temas de salud</a></li>
-                <li><a href="error/Error_404.html">Medicinas y suplementos</a></li>
-                <li><a href="forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
-                <li><a href="error/Error_404.html">Videos y multimedia</a></li>
-                <li><a href="forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
-                <li><a href="forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
-                <li><a href="migas_pan.html">mapa de la web</a></li>
-                <li><a href="declaracion_acces.html">declaracion deaccesibilidad</a></li>
-
-            </ul>
-        </nav>
+        <div class="menu_encabezado">
+                <a href="index.html"><img src="imagenes/Logo_cabecera_TEM.png" alt="Imagen del logo de la web" width="400"
+                    height="93" /></a>
+            <!--Imagen del encabezado de la web-->
+            <nav id="menu_encabezado" class="navegacion">
+                <!--Barra de navegacion por la pagina-->
+                <ul>
+                    <li><a href="error/Error_404.html">Temas de salud</a></li>
+                    <li><a href="error/Error_404.html">Medicinas y suplementos</a></li>
+                    <li><a href="forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
+                    <li><a href="error/Error_404.html">Videos y multimedia</a></li>
+                    <li><a href="forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
+                    <li><a href="forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
+                    <li><a href="migas_pan.html">Mapa del sitio</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
     <main>
-        <h1>Bienvenidos a TuEnciclopediaMedica</h1>
-        <article>
-            <section>
-                
-                <p>Este sitio web es un lugar en la web donde se registran los articulos de Institutos Nacionales de
-                    la salud para pacientes, familiares y amigos.</p>
-            </section>
-            <section>
-                <h2>Tabla de contenidos del artículo</h2>
+        <div class="container">
+            <h1>Bienvenidos a TuEnciclopediaMedica</h1>
+            <p id="descripcion_sitio">Tu sitio web de confianza para consultar articulos de Institutos Nacionales de la salud para pacientes, familiares y amigos.</p>  
+        </div>
+        
+        <section class="container">
+            <h2>Tabla de contenidos del artículo</h2>
+            <ul>
+                <li><a href="#busqueda">busqueda por iniciales</a></li>
+                <li><a href="#imagen_c_humano">busqueda de enfermedades mediante imagen del cuerpo</a></li>
+                <li><a href="#temas_destacados">temas destacados</a>
                 <ul>
-                    <li><a href="#busqueda">busqueda por iniciales</a></li>
-                    <li><a href="#imagen_c_humano">busqueda de enfermedades mediante imagen del cuerpo</a></li>
-                    <li><a href="#temas_destacados">temas destacados</a>
-                    <ul>
-                        <li><a href="#Covid-19">Covid-19</a></li>
-                        <li><a href="Diabetes">Diabetes</a></li>
-                        <li><a href="Bronquitis">Bronquitis</a></li>
-                    </ul>
-                </li>
+                    <li><a href="#Covid-19">Covid-19</a></li>
+                    <li><a href="Diabetes">Diabetes</a></li>
+                    <li><a href="Bronquitis">Bronquitis</a></li>
                 </ul>
+            </li>
+            </ul>
+        </section>
 
-            </section>
-            <section>
-                <a id="busqueda"></a>
-                <h2>Búsqueda por iniciales</h2>
-                <nav>
-                    <!--Barra de busqueda alfabética-->
-                    <ul>
-                        <li><a href="articulos/A/Pagina_a.html">A</a></li>
-                        <li><a href="articulos/B/Pagina_b.html">B</a></li>
-                        <li><a href="articulos/C/Pagina_c.html">C</a></li>
-                        <li><a href="articulos/D/Pagina_d.html">D</a></li>
-                        <li><a href="error/Error_404.html">E</a></li>
-                        <li><a href="error/Error_404.html">F</a></li>
-                        <li><a href="error/Error_404.html">G</a></li>
-                        <li><a href="error/Error_404.html">H</a></li>
-                        <li><a href="articulos/I/Pagina_i.html">I</a></li>
-                        <li><a href="error/Error_404.html">J</a></li>
-                        <li><a href="error/Error_404.html">K</a></li>
-                        <li><a href="error/Error_404.html">L</a></li>
-                        <li><a href="error/Error_404.html">M</a></li>
-                        <li><a href="error/Error_404.html">N</a></li>
-                        <li><a href="error/Error_404.html">O</a></li>
-                        <li><a href="error/Error_404.html">P</a></li>
-                        <li><a href="error/Error_404.html">Q</a></li>
-                        <li><a href="error/Error_404.html">R</a></li>
-                        <li><a href="error/Error_404.html">S</a></li>
-                        <li><a href="error/Error_404.html">T</a></li>
-                        <li><a href="error/Error_404.html">U</a></li>
-                        <li><a href="error/Error_404.html">W</a></li>
-                        <li><a href="error/Error_404.html">X</a></li>
-                        <li><a href="error/Error_404.html">Y</a></li>
-                        <li><a href="error/Error_404.html">Z</a></li>
-                    </ul>
-                </nav>
-            </section>
-
+        <section class="container" id="busqueda_letras">
+            <h2>Búsqueda por iniciales</h2>
+            <nav class="container">
+                <!--Barra de busqueda alfabética-->
+                <ul>
+                    <li><a href="articulos/A/Pagina_a.html">A</a></li>
+                    <li><a href="articulos/B/Pagina_b.html">B</a></li>
+                    <li><a href="articulos/C/Pagina_c.html">C</a></li>
+                    <li><a href="articulos/D/Pagina_d.html">D</a></li>
+                    <li><a href="error/Error_404.html">E</a></li>
+                    <li><a href="error/Error_404.html">F</a></li>
+                    <li><a href="error/Error_404.html">G</a></li>
+                    <li><a href="error/Error_404.html">H</a></li>
+                    <li><a href="articulos/I/Pagina_i.html">I</a></li>
+                    <li><a href="error/Error_404.html">J</a></li>
+                    <li><a href="error/Error_404.html">K</a></li>
+                    <li><a href="error/Error_404.html">L</a></li>
+                    <li><a href="error/Error_404.html">M</a></li>
+                    <li><a href="error/Error_404.html">N</a></li>
+                    <li><a href="error/Error_404.html">O</a></li>
+                    <li><a href="error/Error_404.html">P</a></li>
+                    <li><a href="error/Error_404.html">Q</a></li>
+                    <li><a href="error/Error_404.html">R</a></li>
+                    <li><a href="error/Error_404.html">S</a></li>
+                    <li><a href="error/Error_404.html">T</a></li>
+                    <li><a href="error/Error_404.html">U</a></li>
+                    <li><a href="error/Error_404.html">W</a></li>
+                    <li><a href="error/Error_404.html">X</a></li>
+                    <li><a href="error/Error_404.html">Y</a></li>
+                    <li><a href="error/Error_404.html">Z</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <div class="container">
             <section class="busqueda_visual">
                 <a id="imagen_c_humano"></a>
                 <h2> Búsqueda de enfermedad por partes del cuerpo</h2>
@@ -120,8 +115,9 @@
                     </map>
                 </figure>
             </section>
+        </div>
 
-            <section>
+            <section class="container">
                 <a id="temas_destacados"></a>
                 <h2>Temas detacados</h2>
                 <section>
@@ -152,7 +148,7 @@
                                     href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i></p>
                 </section>
             </section>
-        </article>
+        
     </main>
 
     <footer>
@@ -162,7 +158,7 @@
                 <p>Carretera San Vicente del Raspeig s/n</p>
                 <p>03690 San Vicente del Raspeig - Alicante</p>
             </address>
-
+            <a href="declaracion_acces.html">declaracion deaccesibilidad</a>
             <figure>
                 <img src="imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44" />
             </figure>
@@ -192,6 +188,7 @@
                     height="50" />
                 <figcaption>Twitter</figcaption>
             </figure>
+
             <p>Mario Amorós Rivera</p>
             <p>Pablo Rocamora García</p>
             <p>2021</p>
