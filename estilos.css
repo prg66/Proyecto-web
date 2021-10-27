@@ -1,11 +1,12 @@
 *{  padding:0;
     margin:0;
     box-sizing:border-box;
+    text-align: justify;
 }
 /*Cuerpo de la pagina web*/
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #e8e8e8;
+    background-color: #ddf8f6;
 }
 
 /*Encabezado de la pagina web*/
@@ -14,53 +15,88 @@ header{
     display: inline-block;
     
 }
-
+header{
+    
+    background-color: RGB(255,255,255);
+    width: 100%;
+}
 header ul li{
     display:inline-block;
 
 }
-
 header ul li a{
-    color:rgb(255, 255, 255);
+    color: #000000;
     text-size-adjust: 100px;
     display:block;
     padding:10px 10px;
     text-decoration: none;
-    background-color: RGB(69,189,205);
+    background-color: #b3ec9d;
     }
 
 header li a:hover{
-    background-color: gray;
+    background-color: rgb(199, 236, 157);
 
 }
+/*---------------------------------------------------------barra de arriba------------------------------------------------------------*/
+#titulo h1{
+    font-size: 30px;
+}
+#titulo p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-justify:auto;
+  padding:0;
+}
+/*--------------------------------------------------------------titulo y desc-------------------------------------------------------*/
+#tabla_contenidos{
+    background-color:rgb(179, 236, 157);
+    margin-left: 20px;
+}
+#tabla_contenidos ul{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#tabla_contenidos ul li{
+    
+}
+#tabla_contenidos ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+#tabla_contenidos ul li a:hover{
+    border:line-width;
+    background-color:#008f70;
+    color: #ddf8f6;
+}
+
+ul li ul {
+    padding-left: 20px;
+}
+/*---------------------------------------------------------tabla de contenidos------------------------------------------------------------*/
 /*Busqueda por iniciales*/
-
-
-
 
 .container{
     padding: 20px;
-}
-
-#descripcion_sitio{
-    padding: 10px
+    padding-right: 20px;
 }
 
 #busqueda_letras ul li{
     display:inline-block;
+    margin:0;
 }
 
 #busqueda_letras nav ul li a{
-    color:rgb(255, 255, 255);
+    color: #000000;
     text-size-adjust: 100px;
     display:block;
     padding:10px 10px;
+    margin-right:0px;
     text-decoration: none;
-    background-color: RGB(69,189,205);
+    background-color:rgb(179, 236, 157);
 
 }
 #busqueda_letras li a:hover{
-    background-color: gray;
+    background-color: rgb(95, 215, 231);
     border:line-width;
 
 }
@@ -69,11 +105,17 @@ header li a:hover{
 
 
 nav ul{
-    background-color:RGB(69,189,205);
+    background-color:rgb(179, 236, 157);
+}
+/*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
+.busqueda_visual{
+    width: 75em;   
+}
+.busqueda_visual h2{
+    padding-bottom: 10px;
 }
 
-header{
-    
-    background-color: RGB(255,255,255);
-    width: 100%;
+/*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
+#temas_destacados{
+    width: 25em;
 }
