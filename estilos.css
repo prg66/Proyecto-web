@@ -26,7 +26,6 @@ header ul li{
 }
 header ul li a{
     color: #000000;
-    text-size-adjust: 100px;
     display:block;
     padding:10px 10px;
     text-decoration: none;
@@ -64,7 +63,6 @@ header li a:hover{
     color: #000000;
 }
 #tabla_contenidos ul li a:hover{
-    border:line-width;
     background-color:#008f70;
     color: #ddf8f6;
 }
@@ -87,7 +85,6 @@ ul li ul {
 
 #busqueda_letras nav ul li a{
     color: #000000;
-    text-size-adjust: 100px;
     display:block;
     padding:10px 10px;
     margin-right:0px;
@@ -97,7 +94,6 @@ ul li ul {
 }
 #busqueda_letras li a:hover{
     background-color: rgb(95, 215, 231);
-    border:line-width;
 
 }
 /**/
