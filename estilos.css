@@ -61,7 +61,7 @@ header li a:hover{
 }
 #busqueda_letras li a:hover{
     background-color: gray;
-    border:line-width:5px;RGB(255,255,255); solid;
+    border:line-width;
 
 }
 /**/
