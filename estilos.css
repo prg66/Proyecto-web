@@ -1,3 +1,9 @@
+var(--color-principal, rgba(255,255,255,1))
+var(--color-encabezados, value)
+var(--color-texto, value)
+var(--color-titulos, value)
+
+
 *{  padding:0;
     margin:0;
     box-sizing:border-box;
@@ -6,7 +12,7 @@
 /*Cuerpo de la pagina web*/
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #ddf8f6;
+    background-color: #ddf0ee;
 }
 
 /*Encabezado de la pagina web*/
@@ -115,3 +121,56 @@ nav ul{
 #temas_destacados{
     width: 25em;
 }
+
+/*Footer*/
+footer{
+    display:block;
+    background-color:blue;
+}
+.titulo-footer{
+    text-align:center;
+    text-decoration: underline black;
+}
+#bloque-1{
+    display: inline-block;
+    padding: 2.5em;
+    }
+    #bloque-1-1{
+        padding: 2.5em;
+    }
+    #bloque-1-2{
+        padding:2.5em;
+    }
+#bloque-2{
+    display: inline-block;
+    padding:2.5em;
+    }
+    #bloque-2-1{
+        padding: 2.5em;
+    }
+    #bloque-2-2{
+        padding:2.5em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer figure {
+    padding:2em;
+    display: inline-block;
+}
+
+footer figure figcaption{
+    display:block;
+    text-align: center;
+}
+
