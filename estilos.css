@@ -328,8 +328,8 @@ ul li ul {
 
 /*Footer*/
 footer{
+    padding-top: 500px;
     display:inline-block;
-    background-color:rgb(179, 236, 157);
     width: 100%;
 }
 .titulo-footer{
@@ -337,8 +337,10 @@ footer{
     text-decoration: underline black;
 }
 #bloque-1{
+    background-color:rgb(179, 236, 157);
     display: inline-block;
     width: 50%;
+    padding-right: 50%;
     }
     #bloque-1-1{
         width: 50%;
@@ -348,6 +350,7 @@ footer{
         display: inline;
     }
 #bloque-2{
+    background-color:rgb(179, 236, 157);
     display: inline-block;
     width: 50%;
     }
