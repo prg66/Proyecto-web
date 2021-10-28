@@ -1,221 +1,217 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <title>Enciclopedia Médica | Inicio</title>
-    <!--Titulo de la pagina-->
-    <meta charset="utf-8" />
-    <!--Codificacion del documento-->
-    <meta name="description" content="Sitio web de consultas sobre temas de salud." />
-    <!--Breve descripcion del sitio web-->
-    <meta name="keywords" content="enciclopedia, medica, medicina" />
-    <!--Palabras clave de la pagina-->
-    <meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera" />
-    <!--Nombre del autor del contenido de la web-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Ajuste de escala para visualizacion en diferentes dispositivos-->
-    <link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon"/>
-    <!--Icono de la pestaña de web-->
-    <link href="estilos.css" type="text/css" rel="stylesheet">
-    <meta http-equiv="refresh" content="5" >
-</head>
-
-<body>
-    <header>
-        <div class="menu_encabezado">
-                <a href="index.html"><img src="imagenes/Logo_cabecera_TEM.png" alt="Imagen del logo de la web" width="400"
-                    height="93" /></a>
-            <!--Imagen del encabezado de la web-->
-            <nav id="menu_encabezado" class="navegacion">
-                <!--Barra de navegacion por la pagina-->
-                <ul>
-                    <li><a href="error/Error_404.html">Temas de salud</a></li>
-                    <li><a href="error/Error_404.html">Medicinas y suplementos</a></li>
-                    <li><a href="forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
-                    <li><a href="error/Error_404.html">Videos y multimedia</a></li>
-                    <li><a href="forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
-                    <li><a href="forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
-                    <li><a href="migas_pan.html">Mapa del sitio</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <main>
-        <div class="container" id=titulo>
-            <h1>Bienvenidos a TuEnciclopediaMedica</h1>
-            <p id="descripcion_sitio">Tu sitio web de confianza para consultar articulos de Institutos Nacionales de la salud para pacientes, familiares y amigos.</p>  
-        </div>
-        
-        <div class="container" id=tabla_contenidos>
-            <h2>Tabla de contenidos del artículo</h2>
-            <ul>
-                <li><a href="#busqueda">busqueda por iniciales</a></li>
-                <li><a href="#imagen_c_humano">busqueda de enfermedades mediante imagen del cuerpo</a></li>
-                <li><a href="#temas_destacados">temas destacados</a>
-                <ul>
-                    <li><a href="#Covid-19">Covid-19</a></li>
-                    <li><a href="Diabetes">Diabetes</a></li>
-                    <li><a href="Bronquitis">Bronquitis</a></li>
-                </ul>
-            </li>
-            </ul>
-        </div>
-
-        <section class="container" id="busqueda_letras">
-            <h2>Búsqueda por iniciales</h2>
-            <nav class="container">
-                <!--Barra de busqueda alfabética-->
-                <ul>
-                    <li><a href="articulos/A/Pagina_a.html">A</a></li>
-                    <li><a href="articulos/B/Pagina_b.html">B</a></li>
-                    <li><a href="articulos/C/Pagina_c.html">C</a></li>
-                    <li><a href="articulos/D/Pagina_d.html">D</a></li>
-                    <li><a href="error/Error_404.html">E</a></li>
-                    <li><a href="error/Error_404.html">F</a></li>
-                    <li><a href="error/Error_404.html">G</a></li>
-                    <li><a href="error/Error_404.html">H</a></li>
-                    <li><a href="articulos/I/Pagina_i.html">I</a></li>
-                    <li><a href="error/Error_404.html">J</a></li>
-                    <li><a href="error/Error_404.html">K</a></li>
-                    <li><a href="error/Error_404.html">L</a></li>
-                    <li><a href="error/Error_404.html">M</a></li>
-                    <li><a href="error/Error_404.html">N</a></li>
-                    <li><a href="error/Error_404.html">O</a></li>
-                    <li><a href="error/Error_404.html">P</a></li>
-                    <li><a href="error/Error_404.html">Q</a></li>
-                    <li><a href="error/Error_404.html">R</a></li>
-                    <li><a href="error/Error_404.html">S</a></li>
-                    <li><a href="error/Error_404.html">T</a></li>
-                    <li><a href="error/Error_404.html">U</a></li>
-                    <li><a href="error/Error_404.html">W</a></li>
-                    <li><a href="error/Error_404.html">X</a></li>
-                    <li><a href="error/Error_404.html">Y</a></li>
-                    <li><a href="error/Error_404.html">Z</a></li>
-                </ul>
-            </nav>
-        </section>
-        
-        <div class="container">
-            <section class="busqueda_visual">
-                <a id="imagen_c_humano"></a>
-                <h2> Búsqueda de enfermedad por partes del cuerpo</h2>
-                <figure>
-                    <img src="imagenes/cuerpo.jpg" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
-                    <map id="mapeocuerpo" name="mapeocuerpo">
-                        <area href="articulos/A/Accidente_cerebrovascular.html" shape="circle" coords="299,98,25"
-                            alt="cabeza / accidende cerebrovascular" />
-                        <area href="articulos/B/Bronquitis.html" shape="rect" coords="249,234,275,292"
-                            alt=" pulmon / bronquitis" />
-                        <area href="articulos/B/Bronquitis.html" shape="rect" coords="321,240,360,298"
-                            alt=" pulmon / bronquitis" />
-                        <area href="articulos/D/Diabetes.html" shape="poly" coords="277,352,276,363,317,353"
-                            alt=" pancreas / Diabetes" />
-                    </map>
+	<head>
+		<title>Enciclopedia Médica | Inicio</title>
+		<!--Titulo de la pagina-->
+		<meta charset="utf-8" />
+		<!--Codificacion del documento-->
+		<meta name="description" content="Sitio web de consultas sobre temas de salud." />
+		<!--Breve descripcion del sitio web-->
+		<meta name="keywords" content="enciclopedia, medica, medicina" />
+		<!--Palabras clave de la pagina-->
+		<meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera" />
+		<!--Nombre del autor del contenido de la web-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Ajuste de escala para visualizacion en diferentes dispositivos-->
+		<link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon"/>
+		<!--Icono de la pestaña de web-->
+		<link href="estilos.css" type="text/css" rel="stylesheet">
+		<meta http-equiv="refresh" content="5" >
+	</head>
+	<body>
+		<header>
+			<div id="barra-superior-1">
+                <a id="enlace-top" href="https://www.nlm.nih.gov/" hreflang="en-us">U.S. National Library of Medicine</a>
+            </div>
+            <div id="barra-superior-2">
+                <figure id="logo_superior">
+                    <a href="index.html">
+                        <img src="imagenes/Logo_cabecera_TEM.png" 
+                        alt="Imagen del logo de la web" 
+                        width="400"
+                        height="93" />
+                    </a>
                 </figure>
-            </section>
-        </div>
-
-            <section class="container">
-                <a id="temas_destacados"></a>
-                <h2>Temas detacados</h2>
-                <section>
-                    <a id="Covid-19"></a>
-                    <h3>Covid-19</h3>
-                    <p><a href="articulos/E/Enfermedades_contagiosas.html">¿Cómo puedo saber si mis síntomas son
-                            compatibles con el covid?</a></p>
-                    <hr>
-                </section>
-
-                <section>
-                    <a id="Diabetes"></a>
-                    <h3>Diabetes</h3>
-                    <p><i>La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están
-                            muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona
-                            que ayuda a que la glucosa entre a las células para suministrarles energía. En la
-                            diabetes tipo 1, el cuerpo no produce insulina.<b> Pinche <a
-                                    href="articulos/D/Diabetes.html">aquí</a> para mas información</b></i></p>
-                    <hr>
-                </section>
-
-                <section>
-                    <a id="Bronquitis">Bronquitis</a>
-                    <h3>Bronquitis</h3>
-                    <p><i>Dado que la mayoría de los casos de bronquitis son causados por infecciones virales, los
-                            antibióticos no resultan eficaces. Sin embargo, si el médico sospecha que tienes una
-                            infección bacteriana, es posible que te recete un antibiótico.<b>Pinche <a
-                                    href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i></p>
-                </section>
-            </section>
+				
+				<!--Imagen del encabezado de la web-->
+				<nav id="menu_encabezado" class="navegacion">
+					<!--Barra de navegacion por la pagina-->
+					<ul>
+						<li><a href="error/Error_404.html">Temas de salud</a></li>
+						<li><a href="error/Error_404.html">Medicinas y suplementos</a></li>
+						<li><a href="forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
+						<li><a href="error/Error_404.html">Videos y multimedia</a></li>
+						<li><a href="forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
+						<li><a href="forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
+						<li><a href="migas_pan.html">Mapa del sitio</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
         
-    </main>
+		<main>
+			<div class="container" id="titulo">
+				<h1>Bienvenido a TuEnciclopediaMedica</h1>
+				<p id="descripcion_sitio">Tu sitio web de confianza para consultar articulos de Institutos Nacionales de la salud para pacientes, familiares y amigos.</p>
+			</div>
 
-    <footer>
-        <hr>
-            
-            <div id="bloque-1">
-                <div id="bloque-1-1">
-                    <p class="titulo-footer">Dirección:</p>
-                    <address>
-                        <p>Escuela Politécnica Superior</p>
-                        <p>Universidad de Alicante</p>
-                        <p>Carretera San Vicente del Raspeig s/n</p>
-                        <p>03690 San Vicente del Raspeig - Alicante</p>
-                    </address>
-                    <figure>
-                        <img src="imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44" />
-                    </figure>
-                </div>
-                
-                <div id="bloque-1-2">
-                    <p class="titulo-footer">Redes sociales:</p>
-                    <div id="iconos-rrss">
-                        <figure class="icono-rrss">
-                            <img src="imagenes/logo_facebook_esc.png" alt="Ver perfil de tuenciclopediamedica en facebook"
-                                width="77" height="50" />
-                            <figcaption>Facebook</figcaption>
-                        </figure>
-            
-                        <figure class="icono-rrss">
-                            <img src="imagenes/logo_instagram_esc.png" alt="Ver perfil de tuenciclopediamedica en instagram"
-                                width="77" height="50" />
-                            <figcaption>Instagram</figcaption>
-                        </figure>
-            
-                        <figure class="icono-rrss">
-                            <img src="imagenes/logo_linkedin_esc.png" alt="Ver perfil de tuenciclopediamedica en linkedin"
-                                width="77" height="50" />
-                            <figcaption>LinkedIn</figcaption>
-                        </figure>
-            
-                        <figure class="icono-rrss">
-                            <img src="imagenes/logo_twitter_esc.png" alt="Ver perfil de tuenciclopediamedica en twitter" width="77"
-                                height="50" />
-                            <figcaption>Twitter</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-
-            <div id="bloque-2">
-                <div id="bloque-2-1">
-                    <p class="titulo-footer">Autores:</p>
-                    <p>Mario Amorós Rivera</p>
-                    <p>Pablo Rocamora García</p>
-                    <p id="anyo">2021</p>
-                    <span>Enciclopedia Médica&#169;</span>
-                </div>
-                
-                <div id="bloque-2-2">
-                    <p class="titulo-footer">Documentación</p>
-                    <a href=declaracion_acces.html>Declaración de accesibilidad</a>
-                </div>
-            </div>
-
-
-            
-    </footer>
-</body>
-
+			<div class="container" id="tabla_contenidos">
+				<h2>Tabla de contenidos</h2>
+				<ul>
+					<li><a href="#busqueda">Búsqueda por iniciales</a></li>
+					<li><a href="#imagen_c_humano">Búsqueda de enfermedades mediante imagen del cuerpo</a></li>
+					<li>
+						<a href="#temas_destacados">Temas destacados</a>
+						<ul>
+							<li><a href="#Covid-19">Covid-19</a></li>
+							<li><a href="Diabetes">Diabetes</a></li>
+							<li><a href="Bronquitis">Bronquitis</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<section class="container" id="busqueda_letras">
+				<h2>Búsqueda por iniciales</h2>
+				<nav class="container">
+					<!--Barra de busqueda alfabética-->
+					<ul>
+						<li><a href="articulos/A/Pagina_a.html">A</a></li>
+						<li><a href="articulos/B/Pagina_b.html">B</a></li>
+						<li><a href="articulos/C/Pagina_c.html">C</a></li>
+						<li><a href="articulos/D/Pagina_d.html">D</a></li>
+						<li><a href="error/Error_404.html">E</a></li>
+						<li><a href="error/Error_404.html">F</a></li>
+						<li><a href="error/Error_404.html">G</a></li>
+						<li><a href="error/Error_404.html">H</a></li>
+						<li><a href="articulos/I/Pagina_i.html">I</a></li>
+						<li><a href="error/Error_404.html">J</a></li>
+						<li><a href="error/Error_404.html">K</a></li>
+						<li><a href="error/Error_404.html">L</a></li>
+						<li><a href="error/Error_404.html">M</a></li>
+						<li><a href="error/Error_404.html">N</a></li>
+						<li><a href="error/Error_404.html">O</a></li>
+						<li><a href="error/Error_404.html">P</a></li>
+						<li><a href="error/Error_404.html">Q</a></li>
+						<li><a href="error/Error_404.html">R</a></li>
+						<li><a href="error/Error_404.html">S</a></li>
+						<li><a href="error/Error_404.html">T</a></li>
+						<li><a href="error/Error_404.html">U</a></li>
+						<li><a href="error/Error_404.html">W</a></li>
+						<li><a href="error/Error_404.html">X</a></li>
+						<li><a href="error/Error_404.html">Y</a></li>
+						<li><a href="error/Error_404.html">Z</a></li>
+					</ul>
+				</nav>
+			</section>
+			<div class="container">
+				<section class="busqueda_visual">
+					<a id="imagen_c_humano"></a>
+					<h2> Búsqueda de enfermedad por partes del cuerpo</h2>
+					<figure>
+						<img src="imagenes/cuerpo.jpg" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
+						<map id="mapeocuerpo" name="mapeocuerpo">
+							<area href="articulos/A/Accidente_cerebrovascular.html" shape="circle" coords="299,98,25"
+								alt="cabeza / accidende cerebrovascular" />
+							<area href="articulos/B/Bronquitis.html" shape="rect" coords="249,234,275,292"
+								alt=" pulmon / bronquitis" />
+							<area href="articulos/B/Bronquitis.html" shape="rect" coords="321,240,360,298"
+								alt=" pulmon / bronquitis" />
+							<area href="articulos/D/Diabetes.html" shape="poly" coords="277,352,276,363,317,353"
+								alt=" pancreas / Diabetes" />
+						</map>
+					</figure>
+				</section>
+			</div>
+			<section class="container">
+				<a id="temas_destacados"></a>
+				<h2>Temas detacados</h2>
+				<section>
+					<a id="Covid-19"></a>
+					<h3>Covid-19</h3>
+					<p><a href="articulos/E/Enfermedades_contagiosas.html">¿Cómo puedo saber si mis síntomas son
+						compatibles con el covid?</a>
+					</p>
+					<hr>
+				</section>
+				<section>
+					<a id="Diabetes"></a>
+					<h3>Diabetes</h3>
+					<p><i>La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están
+						muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona
+						que ayuda a que la glucosa entre a las células para suministrarles energía. En la
+						diabetes tipo 1, el cuerpo no produce insulina.<b> Pinche <a
+							href="articulos/D/Diabetes.html">aquí</a> para mas información</b></i>
+					</p>
+					<hr>
+				</section>
+				<section>
+					<a id="Bronquitis">Bronquitis</a>
+					<h3>Bronquitis</h3>
+					<p><i>Dado que la mayoría de los casos de bronquitis son causados por infecciones virales, los
+						antibióticos no resultan eficaces. Sin embargo, si el médico sospecha que tienes una
+						infección bacteriana, es posible que te recete un antibiótico.<b>Pinche <a
+							href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i>
+					</p>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<hr>
+			<div id="bloque-1">
+				<div id="bloque-1-1">
+					<p class="titulo-footer">Dirección:</p>
+					<address>
+						<p>Escuela Politécnica Superior</p>
+						<p>Universidad de Alicante</p>
+						<p>Carretera San Vicente del Raspeig s/n</p>
+						<p>03690 San Vicente del Raspeig - Alicante</p>
+					</address>
+					<figure>
+						<img src="imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44" />
+					</figure>
+				</div>
+				<div id="bloque-1-2">
+					<p class="titulo-footer">Redes sociales:</p>
+					<div id="iconos-rrss">
+						<figure class="icono-rrss">
+							<img src="imagenes/logo_facebook_esc.png" alt="Ver perfil de tuenciclopediamedica en facebook"
+								width="77" height="50" />
+							<figcaption>Facebook</figcaption>
+						</figure>
+						<figure class="icono-rrss">
+							<img src="imagenes/logo_instagram_esc.png" alt="Ver perfil de tuenciclopediamedica en instagram"
+								width="77" height="50" />
+							<figcaption>Instagram</figcaption>
+						</figure>
+						<figure class="icono-rrss">
+							<img src="imagenes/logo_linkedin_esc.png" alt="Ver perfil de tuenciclopediamedica en linkedin"
+								width="77" height="50" />
+							<figcaption>LinkedIn</figcaption>
+						</figure>
+						<figure class="icono-rrss">
+							<img src="imagenes/logo_twitter_esc.png" alt="Ver perfil de tuenciclopediamedica en twitter" width="77"
+								height="50" />
+							<figcaption>Twitter</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div id="bloque-2">
+				<div id="bloque-2-1">
+					<p class="titulo-footer">Autores:</p>
+					<p>Mario Amorós Rivera</p>
+					<p>Pablo Rocamora García</p>
+					<p id="anyo">2021</p>
+					<span>Enciclopedia Médica&#169;</span>
+				</div>
+				<div id="bloque-2-2">
+					<p class="titulo-footer">Documentación</p>
+					<a href=declaracion_acces.html>Declaración de accesibilidad</a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
+
