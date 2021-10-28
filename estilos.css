@@ -1,4 +1,10 @@
+@import url("minimum.css") screen and (max-width: 480px);
+@import url("medium.css") screen and (min-width: 481px) and (max-width: 1024px);
+@import url("maximum.css") screen and (min-width: 1025px);
 
+@media screen {
+    * {font-family: sans-serif;}
+    }
 
 /*Aspectos generales*/
 html {
@@ -11,14 +17,14 @@ article,aside,figcaption,figure,footer,header,menu,nav,section {
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: rgba(255,255,255,1);
+    
     line-height:1;
-    background:linear-gradient(#feffff 0%,#ddf1f9 20%,#a0d8ef 100%);
+    
 }
 
 /*Titulos y encabezados*/
 h1,h2,h3,h4,h5,h6{
-    color:#404040;
+    
     font-weight:bold
 }
 
@@ -60,10 +66,9 @@ em {
     font-style:italic
 }
 /*Tablas*/
-table {
-    border-collapse:collapse;
-    border-spacing:0
-}
+
+
+
 /*Listas*/
 ol,ul {
     list-style:none
@@ -76,12 +81,10 @@ ul ul {
 ul ul li {
  margin-bottom:.5em
 }
+
 #busqueda_letras nav{
     
-    margin-left: auto;
-    margin-right: auto;
-    align-content:center;
-    justify-content:center;
+    
     text-align:center;
 
 }
@@ -102,7 +105,7 @@ li p {
 
 
 form {
-    margin:0
+    margin:0;
 }
 
 fieldset {
@@ -130,22 +133,18 @@ fieldset {
 input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="password"], textarea, select{
     font-size:1em;
     font-family:"Lucida Grande",Arial,Helvetica,sans-serif;
-    color:#444;
     width:80%;
     padding:.76923em .61538em;
     min-height:1.30769em;
-    background-color:#ffffff;
     background-image:none;
     border:.08462em solid #b4b4b4;
     border-radius:.30769em;
     box-shadow: 0 .23077em .23077em rgba(0,0,0,0.075);
 }
-input[type="tel"]
+
 
 input[type="text"]:focus, textarea:focus, select:focus {
-    border-color:#66afe9;
     box-shadow:0 .1em .1em rgba(0,0,0,0.075),0 0 .8em rgba(102,175,233,0.6);
-    color:#444
 }
 
 textarea {
@@ -158,7 +157,7 @@ label, legend {
 }
 
 input[type="checkbox"] {
- display:inline;
+    display:inline;
 }
 
 .button, button, input[type="submit"] {
@@ -167,14 +166,12 @@ input[type="checkbox"] {
     text-decoration:none;
     line-height:normal;
     font-family:"Lucida Grande",Arial,Helvetica,sans-serif;
-    color:#FFF;
     border:.07143em solid #000;
     border-radius:.28571em;
     margin:0;
     padding:.71429em;
     display:inline-block;
-    background:#2B8737;
-    background:linear-gradient(#329e39 0%,#2b8737 25%,#21662e 100%)
+    
 }
 
 
@@ -182,30 +179,28 @@ input[type="checkbox"] {
 header {
     list-style: none;
     display: inline-block;
-    background-color: rgba(255,255,255,1);
     width: 100%;
     padding:0;
     margin:0;
 }
-    #barra-superior-1{
-        background-color: rgba(0,124,191,255);
-    }
+    
     
     #enlace-top{
         display: block;
         text-decoration: none;
-        color: #fff;
         padding: 0.5em 1em;
     }
-    #enlace-top:hover{text-decoration:underline;}
-    #enlace-top:active{color:rgba(57,181,74,255)}
+
+    #enlace-top:hover{
+        text-decoration:underline;
+    }
+   
     
     header nav ul{
-        background-color:rgba(0,130,200,255);
         border: 1px solid rgba(25,25,25);
         margin-bottom: 0%;
-        
     }
+
     header ul li{
         display:inline-block;
 
@@ -215,31 +210,26 @@ header {
             display:block;
             padding: 0.5em 1em;
             text-decoration: none;
-            background-color: rgba(0,130,200,255);
-            color:#FFF;
+            
             }
-
-        header li a:hover{
-            background-color: #f6f6f6;
-            color: #000000;
-        }
+      
 /*---------------------------------------------------------barra de arriba------------------------------------------------------------*/
 #titulo h1{
     font-size: 30px;
 }
 #titulo p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   font-size: 20px;
   text-justify:auto;
   padding:0;
 }
 /*--------------------------------------------------------------titulo y desc-------------------------------------------------------*/
 #tabla_contenidos{
-    background-color:rgb(179, 236, 157,0.6);
+    
     margin-left: 20px;
-    border-radius: 5%;
+    
     padding: 10px;
-    border-color: rgba(0,124,191,255);
+    
     border-width: 3px;
     border-style: dotted
 }
@@ -249,16 +239,14 @@ header {
 }
 #tabla_contenidos ul li{
     list-style:none;
+    padding:0.3em;
 }
 
 #tabla_contenidos ul li a{
     text-decoration: none;
-    color: #000000;
+    
 }
-#tabla_contenidos ul li a:hover{
-    background-color:#008f70;
-    color: #ddf8f6;
-}
+
 
 ul li ul {
     padding-left: 20px;
@@ -279,19 +267,19 @@ ul li ul {
 }
 
 #busqueda_letras nav ul li a{
-    color: #000000;
+    
     display:block;
     padding:10px 10px;
     margin-right:0px;
     text-decoration: none;
-    background-color:rgb(179, 236, 157);
-    border-radius: 5px;
+    
+    border: 1px solid rgba(25,25,25);
+    /*background-color:rgb(179, 236, 157);
+    border-radius: 5px;*/
 
 }
-#busqueda_letras li a:hover{
-    background-color: rgb(95, 215, 231);
 
-}
+
 #busqueda_letras ul li::before{
     content: '';
     width: 0px;
@@ -309,9 +297,14 @@ ul li ul {
 
 
 /*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
-.busqueda_visual{
-    width: 75em;   
+.busqueda_visual figure{
+    text-align: center;
+    /*text-justify: center;
+    margin-left:auto;
+    margin-right: auto;
+    justify-content: center; */
 }
+
 .busqueda_visual h2{
     padding-bottom: 10px;
     margin: 10px;
@@ -337,7 +330,7 @@ footer{
     text-decoration: underline black;
 }
 #bloque-1{
-    background-color:rgb(179, 236, 157);
+    
     display: inline-block;
     width: 50%;
     padding-right: 50%;
@@ -350,7 +343,7 @@ footer{
         display: inline;
     }
 #bloque-2{
-    background-color:rgb(179, 236, 157);
+    
     display: inline-block;
     width: 50%;
     }

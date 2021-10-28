@@ -38,7 +38,7 @@ main ul li::before{
     width: 20px;
     height: 20px;
     position:absolute;
-    background-image: url('imagenes/friends_link_send_share_icon_123609.png');
+    /*background-image: url('imagenes/friends_link_send_share_icon_123609.png');*/
     background-size: cover;
     background-position: center;
     left: 0;
