@@ -37,13 +37,29 @@ main ul li::before{
     content: '';
     width: 20px;
     height: 20px;
-    position: absolute;
-    padding-bottom: 5px;
+    position:absolute;
     background-image: url('imagenes/friends_link_send_share_icon_123609.png');
     background-size: cover;
     background-position: center;
     left: 0;
-    top: 50%;
+    top: 20%;
     transform: translateY(-40%);
 }
+section ul li a{
+    text-decoration: none;
+    color: black;
+}
+section ul li a:hover{
+    background-color:darkkhaki;
+}
+section p{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    padding: 20px ;
+    margin: 10px;
+    background-color:rgb(179, 236, 157,0.6);
+    border-color: cadetblue;
+    border-radius: 5px;
 
+}

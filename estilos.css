@@ -47,6 +47,7 @@ h4 {
 }
 
 /*Cuerpo de la pagina web*/
+
 p {
     margin:0 0 1.42857em 0
 }
@@ -236,7 +237,11 @@ header {
 #tabla_contenidos{
     background-color:rgb(179, 236, 157,0.6);
     margin-left: 20px;
-    border-radius: 10%;
+    border-radius: 5%;
+    padding: 10px;
+    border-color: rgba(0,124,191,255);
+    border-width: 3px;
+    border-style: dotted
 }
 #tabla_contenidos ul{
     margin-left: 10px;
@@ -269,6 +274,7 @@ ul li ul {
 #busqueda_letras ul li{
     display:inline-block;
     margin:0;
+    padding-left: 0px;
     
 }
 
@@ -286,6 +292,17 @@ ul li ul {
     background-color: rgb(95, 215, 231);
 
 }
+#busqueda_letras ul li::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position:absolute;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 20%;
+    transform: translateY(-40%);
+}
 /**/
 
 
@@ -297,57 +314,51 @@ ul li ul {
 }
 .busqueda_visual h2{
     padding-bottom: 10px;
+    margin: 10px;
 }
 
-/*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
+/*---------------------------------------------------------busqueda visual------------------------------------------------------------*/
 #temas_destacados{
-    width: 25em;
+    justify-content: center;
 }
+#temas_destacados p{
+    font-size: 20px;
+}
+/*---------------------------------------------------------temas destacados------------------------------------------------------------*/
 
 /*Footer*/
 footer{
-    display:block;
-    background-color:blue;
+    display:inline-block;
+    background-color:rgb(179, 236, 157);
+    width: 100%;
 }
 .titulo-footer{
-    text-align:center;
+    text-align:left;
     text-decoration: underline black;
 }
 #bloque-1{
     display: inline-block;
-    padding: 2.5em;
+    width: 50%;
     }
     #bloque-1-1{
-        padding: 2.5em;
+        width: 50%;
+        float: right;
     }
     #bloque-1-2{
-        padding:2.5em;
+        display: inline;
     }
 #bloque-2{
     display: inline-block;
-    padding:2.5em;
+    width: 50%;
     }
     #bloque-2-1{
-        padding: 2.5em;
+        width: 25%;
+        float: left;
     }
     #bloque-2-2{
-        padding:2.5em;
+        width: 25%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer figure {
-    padding:2em;
     display: inline-block;
 }
 
@@ -356,3 +367,8 @@ footer figure figcaption{
     text-align: center;
 }
 
+/*--------------------------------------------------------footer------------------------------------------------------------*/
+
+img{
+    margin-left: 10px;
+}
