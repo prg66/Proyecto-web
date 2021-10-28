@@ -1,0 +1,49 @@
+#ruta_acces{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    padding: 20px ;
+    background-color:rgb(179, 236, 157);
+    border-color: cadetblue;
+    border-radius: 5px;
+
+}
+#ruta_acces a{
+    text-decoration: none;
+    color:black;
+    background-color:rgb(179, 236, 157);
+
+}
+#ruta_acces a:hover{
+    text-decoration:none ;
+    color:rgb(236, 9, 168);
+}
+main{
+    margin-left: 20px;
+}
+main h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+main ul{
+    list-style:none;
+    
+}
+main ul li{
+    position: relative;
+    padding-left: 30px;
+}
+main ul li::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding-bottom: 5px;
+    background-image: url('imagenes/friends_link_send_share_icon_123609.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
