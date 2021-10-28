@@ -17,11 +17,7 @@
     <!--Icono de la pestaña de web-->
     <link href="../estilos.css" type="text/css" rel="stylesheet">
     <meta http-equiv="refresh" content="5" >
-    <style>
-        p {
-            text-align: justify
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -51,53 +47,50 @@
                 <h2>Realizar registro</h2>
                 <form action="Registro_completado.html">
                     <!--Campos del formulario-->
-                    <fieldset style="background-color: #c6ffff;width: 300px;">
+                    <fieldset>
                         <legend>
                             <h2>Formulario de perfil</h2>
                         </legend>
-                        <p style="text-align: justify;width: 100px;">
+                        
+                        <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" placeholder="Escriba aquí" id="nombre" style="width: 250px;" required />
-                        </p>
+                        </div>
 
-                        <p style="text-align: justify;width: 100px;">
+                        <div class="form-group">
                             <label for="contraseña">contraseña</label>
-                            <input type="password" placeholder="Escriba aquí" pattern="[A-Za-z]{8}" id="contraseña"
-                                style="width: 250px;" required />
-                        </p>
-
-                        <p style="text-align: justify;width: 100px;">
+                            <input type="password" placeholder="Escriba aquí" pattern="[A-Za-z]{8}" id="contraseña" required />
+                        </div>
+                            
+                        <div class="form-group">
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" placeholder="Escriba aquí" id="apellidos" style="width: 250px;"
-                                required />
-                        </p>
-
-                        <p style="text-align: justify;width: 100px;">
+                            <input type="text" placeholder="Escriba aquí" id="apellidos" required />
+                        </div>
+                            
+                        <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Escriba aquí" id="email" style="width: 250px;" required />
-                        </p>
+                            <input type="email" placeholder="Escriba aquí" id="email" required />
+                        </div>
 
-                        <p style="text-align: left;width: 100px;">
+                        <div class="form-group">
                             <label for="fecha">Fecha de nacimiento</label>
-                            <input type="date" id="fecha" style="width: 250px;" required />
-                        </p>
-
-                        <p style="text-align: justify;width: 100px;">
+                            <input type="date" id="fecha"  required />
+                        </div>
+                        
+                        <div class="form-group">
                             <label for="salud">Estado de salud</label>
-                            <input type="range" min="0" max="100" step="20" id="salud" style="width: 250px;" />
-
-                        </p>
-
-                        <p style="text-align: justify;width: 100px;">
+                            <input type="range" min="0" max="100" step="20" id="salud" />
+                        </div>
+                            
+                        <div class="form-group">
                             <label for="telefono">Teléfono</label>
                             <input type="tel" id="telefono" placeholder="escriba aqui" pattern="[0-9]{9}" required />
-
-                            required>
-                        </p>
-
-                        <p>
+                        </div>
+                            
+                        <div class="form-group">
                             <button type="submit">Enviar</button>
-                        </p>
+                        </div>
+
                     </fieldset>
                 </form>
             </section>
