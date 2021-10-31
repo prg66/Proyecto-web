@@ -24,62 +24,119 @@
 		<link href="minimum.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)"/>
 		<link href="medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" />
 		<link href="maximum.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)"/>
+		<script src="https://kit.fontawesome.com/1767ae2a53.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
-		<header>
+		<header class="header">
 			<div id="barra-superior-1">
                 <a id="enlace-top" href="https://www.nlm.nih.gov/" hreflang="en-us">U.S. National Library of Medicine</a>
-            </div>
-            <div id="barra-superior-2">
-                <figure id="logo_superior">
-                    <a href="index.html">
-                        <img src="imagenes/Logo_cabecera_TEM.png" 
-                        alt="Imagen del logo de la web" 
-                        width="400"
-                        height="93" />
-                    </a>
-                </figure>
+				
+				
+			</div>
+            
+			<div id="barra-superior-2">
+                
 				
 				<!--Imagen del encabezado de la web-->
-				<nav id="menu_encabezado" class="navegacion">
+				<nav id="menu_encabezado" class="nav">
+					<div class="barra-superior-2-1">
+						<a href="index.html">
+							<img class="logo" src="imagenes/logo_web_horizontal.png" 
+							alt="Imagen del logo de la web"/>
+						</a>
+						<form id="form-busqueda"  action="forms/Info_recibida.html">
+							<div class="form-box text-combo">
+								<div class="form-area">
+									<label class="hide-offscreen" for="searchtext_primary">Buscar en Tu Enciclopedia Médica</label>
+									<input required id="searchtext_primary" class="form-text" type="text" placeholder="Search MedlinePlus" alt="#Site Search input"  maxlength="400" size="40" />
+								</div>
+								<div class="button-area">
+								  <button class="form-btn" title="Introduzca una patología" alt="Search MedlinePlus" type="submit">IR</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					
 					<!--Barra de navegacion por la pagina-->
-					<ul>
-						<li><a href="error/Error_404.html">Temas de salud</a></li>
-						<li><a href="error/Error_404.html">Medicinas y suplementos</a></li>
-						<li><a href="forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
-						<li><a href="error/Error_404.html">Videos y multimedia</a></li>
-						<li><a href="forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
-						<li><a href="forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
-						<li><a href="migas_pan.html">Mapa del sitio</a></li>
+					<ul class="nav-menu">
+						<li>
+							<button class="nav-toggle nav-menu-item">
+								<i class="fas fa-bars"></i>
+							</button>
+						</li>
+						<li class="nav-menu-item">
+							<a href="error/Error_404.html" class="nav-menu-link">Temas de salud</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="error/Error_404.html" class="nav-menu-link">Medicinas y suplementos</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="forms/Formulario_busqueda.html" class="nav-menu-link">Búsqueda avanzada</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="error/Error_404.html" class="nav-menu-link">Videos y multimedia</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="forms/Formulario_de_contacto.html" class="nav-menu-link">Contacta con nosotros</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="forms/formulario_de_perfil.html" class="nav-menu-link">Crear perfil de usuario</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="migas_pan.html" class="nav-menu-link">Mapa del sitio</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
         
 		<main>
+			
 			<div class="container" id="titulo">
-				<h1>Bienvenido a TuEnciclopediaMedica</h1>
+				<h1>Bienvenido a Tu Enciclopedia Médica</h1>
 				<p id="descripcion_sitio">Tu sitio web de confianza para consultar articulos de Institutos Nacionales de la salud para pacientes, familiares y amigos.</p>
 			</div>
 
-			<div id="tabla_contenidos">
-				<h2>Tabla de contenidos</h2>
-				<ul>
-					<li><a href="#busqueda">Búsqueda por iniciales</a></li>
-					<li><a href="#imagen_c_humano">Búsqueda de enfermedades mediante imagen del cuerpo</a></li>
-					<li>
-						<a href="#temas_destacados">Temas destacados</a>
-						<ul>
-							<li><a href="#Covid-19">Covid-19</a></li>
-							<li><a href="Diabetes">Diabetes</a></li>
-							<li><a href="Bronquitis">Bronquitis</a></li>
-						</ul>
-					</li>
-				</ul>
+			<div class="bloque-2">
+				<div class="elemento" id="tabla_contenidos">
+					<h2>Tabla de contenidos</h2>
+					<ul>
+						<li>
+							<a href="#busqueda-por-iniciales">Búsqueda por iniciales</a>
+						</li>
+						<li>
+							<a href="#imagen_c_humano">Búsqueda de enfermedades mediante imagen del cuerpo</a>
+						</li>
+						<li>
+							<a href="#temas_destacados">Temas destacados</a>
+							<ul>
+								<li>
+									<a href="#Covid-19">Covid-19</a>
+								</li>
+								<li>
+									<a href="Diabetes">Diabetes</a>
+								</li>
+								<li>
+									<a href="Bronquitis">Bronquitis</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					
+				</div>
+				<div class="elemento" id="img-cabecera">
+					<img id="imagen-cebecera" class="elemento" src="imagenes/Imagen_cabecera.jpg" alt="" />
+				</div>
+				
+				
 			</div>
+			
+				
+			
 			<section class="container" id="busqueda_letras">
-				<h2>Búsqueda por iniciales</h2>
+				<h2 id="busqueda-por-iniciales">Búsqueda por iniciales</h2>
 				<nav class="container">
 					<!--Barra de busqueda alfabética-->
 					<ul>
@@ -111,56 +168,71 @@
 					</ul>
 				</nav>
 			</section>
-				<section class="busqueda_visual">
-					<a id="imagen_c_humano"></a>
-					<h2> Búsqueda de enfermedad por partes del cuerpo</h2>
-					<figure>
-						<img src="imagenes/cuerpo.jpg" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
-						<map id="mapeocuerpo" name="mapeocuerpo">
-							<area href="articulos/A/Accidente_cerebrovascular.html" shape="circle" coords="299,98,25"
-								alt="cabeza / accidende cerebrovascular" />
-							<area href="articulos/B/Bronquitis.html" shape="rect" coords="249,234,275,292"
-								alt=" pulmon / bronquitis" />
-							<area href="articulos/B/Bronquitis.html" shape="rect" coords="321,240,360,298"
-								alt=" pulmon / bronquitis" />
-							<area href="articulos/D/Diabetes.html" shape="poly" coords="277,352,276,363,317,353"
-								alt=" pancreas / Diabetes" />
-						</map>
-					</figure>
-				</section>
-			<section id="temas_destacados">
+
+			<section class="busqueda_visual">
+				<a id="imagen_c_humano"></a>
+				<h2> Búsqueda de enfermedad por partes del cuerpo</h2>
+				<figure><!--modificar coordenadas de partes del cuerpo-->
+					<img src="imagenes/cuerpo.jpg" id="mapa-imagen" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
+					<map id="mapeocuerpo" name="mapeocuerpo">
+						<area href="articulos/A/Accidente_cerebrovascular.html" shape="circle" coords="299,98,25"
+							alt="cabeza / accidende cerebrovascular" />
+						<area href="articulos/B/Bronquitis.html" shape="rect" coords="249,234,275,292"
+							alt=" pulmon / bronquitis" />
+						<area href="articulos/B/Bronquitis.html" shape="rect" coords="321,240,360,298"
+							alt=" pulmon / bronquitis" />
+						<area href="articulos/D/Diabetes.html" shape="poly" coords="277,352,276,363,317,353"
+							alt=" pancreas / Diabetes" />
+					</map>
+				</figure>
+			</section>
+
+			<section id="temas-destacados">
 				<a ></a>
-				<h2>Temas detacados</h2>
-				<section>
-					<a id="Covid-19"></a>
-					<h3>Covid-19</h3>
-					<p><a href="articulos/E/Enfermedades_contagiosas.html">¿Cómo puedo saber si mis síntomas son
-						compatibles con el covid?</a>
-					</p>
-					<hr>
+				<h2>Temas destacados</h2>
+				<section class="articulo-destacado">
+					<div class="contenido">
+						<a id="Covid-19"></a>
+						<h3>Covid-19</h3>
+						<p>La enfermedad por coronavirus (COVID‑19) es una enfermedad infecciosa provocada por el virus SARS-CoV-2.</p>
+						<p>La mayoría de las personas que padecen COVID‑19 sufren síntomas de intensidad leve a moderada y se recuperan sin necesidad de tratamientos especiales. Sin embargo, algunas personas desarrollan casos graves y necesitan atención médica.</p>
+						<a href="articulos/E/Enfermedades_contagiosas.html">¿Cómo puedo saber si mis síntomas son compatibles con el covid?</a>
+					</div>
+					
+					<img src="imagenes/covid-td.png" class="img-destac" alt="Imagen del virus Sars-Cov-2"/>
 				</section>
-				<section>
-					<a id="Diabetes"></a>
-					<h3>Diabetes</h3>
-					<p><i>La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están
-						muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona
-						que ayuda a que la glucosa entre a las células para suministrarles energía. En la
-						diabetes tipo 1, el cuerpo no produce insulina.<b> Pinche <a
-							href="articulos/D/Diabetes.html">aquí</a> para mas información</b></i>
-					</p>
-					<hr>
+				
+				<section class="articulo-destacado">
+					<div class="contenido">
+						<a id="Diabetes"></a>
+						<h3>Diabetes</h3>
+						<p><i>La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están
+							muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona
+							que ayuda a que la glucosa entre a las células para suministrarles energía. En la
+							diabetes tipo 1, el cuerpo no produce insulina.<b> Pinche <a
+								href="articulos/D/Diabetes.html">aquí</a> para mas información</b></i>
+						</p>
+					</div>
+						
+					<img src="imagenes/diabetes-td.png" class="img-destac" alt="Imagen de un medidor de glucosa"/>
 				</section>
-				<section>
-					<a id="Bronquitis"></a>
-					<h3>Bronquitis</h3>
-					<p><i>Dado que la mayoría de los casos de bronquitis son causados por infecciones virales, los
-						antibióticos no resultan eficaces. Sin embargo, si el médico sospecha que tienes una
-						infección bacteriana, es posible que te recete un antibiótico.<b>Pinche <a
-							href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i>
-					</p>
+				
+				<section class="articulo-destacado">
+					<div class="contenido">
+						<a id="Bronquitis"></a>
+						<h3>Bronquitis</h3>
+						<p><i>Dado que la mayoría de los casos de bronquitis son causados por infecciones virales, los
+							antibióticos no resultan eficaces. Sin embargo, si el médico sospecha que tienes una
+							infección bacteriana, es posible que te recete un antibiótico.<b>Pinche <a
+								href="articulos/B/Bronquitis.html">aquí </a>para más información </b></i>
+						</p>
+					</div>
+					
+					<img src="imagenes/bronquitis-td.png" class="img-destac" alt="Fotografia de chica con bronquitis."/>
 				</section>
 			</section>
 		</main>
+		
 		<footer>
 			<hr>
 			<div id="bloque-1">
@@ -173,20 +245,23 @@
 						<p>03690 San Vicente del Raspeig - Alicante</p>
 					</address>
 				</div>
-					<div id="bloque-2-1">
-						<p class="titulo-footer">Autores:</p>
-						<p>Mario Amorós Rivera</p>
-						<p>Pablo Rocamora García</p>
-						<p id="anyo">2021</p>
-						<span>Enciclopedia Médica&#169;</span>
-					</div>
-					<div id="bloque-2-2">
-						<p class="titulo-footer">Documentación</p>
-						<a href=declaracion_acces.html>Declaración de accesibilidad</a>
+				
+				<div id="bloque-2-1">
+					<p class="titulo-footer">Autores:</p>
+					<p>Mario Amorós Rivera</p>
+					<p>Pablo Rocamora García</p>
+					<p id="anyo">2021</p>
+					<span>Enciclopedia Médica&#169;</span>
+				</div>
+				
+				<div id="bloque-2-2">
+					<p class="titulo-footer">Documentación</p>
+					<a href=declaracion_acces.html>Declaración de accesibilidad</a>
 					<figure>
 						<img src="imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44" />
 					</figure>
-					</div>
+				</div>
+
 				<div id="bloque-1-2">
 					<p class="titulo-footer">Redes sociales:</p>
 					<div id="iconos-rrss">
@@ -195,16 +270,19 @@
 								width="77" height="50" />
 							<figcaption>Facebook</figcaption>
 						</figure>
+						
 						<figure class="icono-rrss">
 							<img src="imagenes/logo_instagram_esc.png" alt="Ver perfil de tuenciclopediamedica en instagram"
 								width="77" height="50" />
 							<figcaption>Instagram</figcaption>
 						</figure>
+						
 						<figure class="icono-rrss">
 							<img src="imagenes/logo_linkedin_esc.png" alt="Ver perfil de tuenciclopediamedica en linkedin"
 								width="77" height="50" />
 							<figcaption>LinkedIn</figcaption>
 						</figure>
+						
 						<figure class="icono-rrss">
 							<img src="imagenes/logo_twitter_esc.png" alt="Ver perfil de tuenciclopediamedica en twitter" width="77"
 								height="50" />
