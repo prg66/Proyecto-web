@@ -99,15 +99,13 @@ header li a:hover{
 
 }
 
-#bloque-1{
-    background-color:var(--color-encabezado);
-}
+
 
 #bloque-2{
     background-color:var(--color-encabezado);
 }
 
-footer{color:#fff;}
+footer{background-color:rgba(0,130,200,255);}
 
 
 

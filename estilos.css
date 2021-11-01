@@ -304,7 +304,7 @@ input[type="checkbox"] {
    /* float: left;
     
     display: inline;*/
-    width: 60%;
+    width: 80%;
     text-align: left;
     display: inline;
     height:auto;
@@ -411,7 +411,7 @@ ul li ul {
 }
 /*---------------------------------------------------------temas destacados------------------------------------------------------------*/
 #temas-destacados{
-    background-color:rgba(224, 239, 217, 0.6);
+    background-color:rgba(191, 240, 248, 0.6);
     border-color: rgba(0,124,191,255);
     border-width: 2px;
     border-style: solid;
@@ -419,7 +419,7 @@ ul li ul {
     margin: 0 auto;
 }
 .articulo-destacado{
-    background-color:rgba(224, 239, 217, 0.6);
+    
     border-color: rgba(0,124,191,255);
     border-radius: 0.3em;
     margin:auto;
@@ -430,49 +430,51 @@ ul li ul {
     overflow: hidden;
     
 }
-.contenido{display: block; width: 60%; text-align: justify;}
+.contenido{display: block; width:75%; text-align: justify;}
 .img-destac{
     width: 20%;
-    height:auto;
+    height:20%;
     max-width: 20%;
     min-width: 10%;
-float: right;}
+float: right;
+display: block;}
 /*Footer*/
 footer{
-    padding-top: 500px;
-    display:inline-block;
+    margin-top:10%;
+    padding-top: 2.5%;
+    display:block;
     width: 100%;
+    overflow: hidden;
 }
 .titulo-footer{
     text-align:left;
     text-decoration: underline black;
 }
 
-#bloque-1{
-    
-    display: inline-block;
+#bloque-1-1{
     width: 50%;
-    padding-right: 50%;
-    }
-    #bloque-1-1{
-        width: 50%;
-        float: right;
-    }
-    #bloque-1-2{
-        display: inline;
-    }
-#bloque-2{
+    float: right;
+}
+#bloque-1-2{
+    display: inline;
+    float: left;
+}
+.bloque{
+    width: 100%;
+    display: inline; 
+    padding: 1em;
+    margin:5% auto;
     
-    display: inline-block;
-    width: 50%;
-    }
-    #bloque-2-1{
-        width: 25%;
-        float: left;
-    }
-    #bloque-2-2{
-        width: 25%;
-    }
+    
+}
+#bloque-2-1{
+    width: 25%;
+    float: left;
+}
+#bloque-2-2{
+    width: 25%;
+    float:right;
+}
 footer figure {
     display: inline-block;
 }
