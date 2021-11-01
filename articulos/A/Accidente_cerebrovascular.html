@@ -25,39 +25,74 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="header">
 			<div id="barra-superior-1">
                 <a id="enlace-top" href="https://www.nlm.nih.gov/" hreflang="en-us">U.S. National Library of Medicine</a>
-            </div>
-            <div id="barra-superior-2">
-                <figure id="logo_superior">
-                    <a href="../../index.html">
-                        <img src="../../imagenes/Logo_cabecera_TEM.png" 
-                        alt="Imagen del logo de la web" 
-                        width="400"
-                        height="93" />
-                    </a>
-                </figure>
+				
+				
+			</div>
+            
+			<div id="barra-superior-2">
+                
 				
 				<!--Imagen del encabezado de la web-->
-				<nav id="menu_encabezado" class="navegacion">
+				<nav id="menu_encabezado" class="nav">
+					<div class="barra-superior-2-1">
+						<a href="index.html">
+							<img class="logo" src="../../imagenes/logo_web_horizontal.png" 
+							alt="Imagen del logo de la web"/>
+						</a>
+						<form id="form-busqueda"  action="forms/Info_recibida.html">
+							<div class="form-box text-combo">
+								<div class="form-area">
+									<label class="hide-offscreen" for="searchtext_primary">Buscar en Tu Enciclopedia Médica</label>
+									<input required id="searchtext_primary" class="form-text" type="text" placeholder="¿Qué desea buscar?" alt="#Site Search input"  maxlength="400" size="40"/>
+								</div>
+								<div class="button-area">
+								  <button class="form-btn" title="Introduzca una patología" alt="Search MedlinePlus" type="submit">IR</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					
 					<!--Barra de navegacion por la pagina-->
-					<ul>
-						<li><a href="../../error/Error_404.html">Temas de salud</a></li>
-						<li><a href="../../error/Error_404.html">Medicinas y suplementos</a></li>
-						<li><a href="../../forms/Formulario_busqueda.html">Búsqueda avanzada</a></li>
-						<li><a href="../../error/Error_404.html">Videos y multimedia</a></li>
-						<li><a href="../../forms/Formulario_de_contacto.html">Contacta con nosotros</a></li>
-						<li><a href="../../forms/formulario_de_perfil.html">Crear perfil de usuario</a></li>
-						<li><a href="../../migas_pan.html">Mapa del sitio</a></li>
+					<ul class="nav-menu">
+						<li>
+							<button class="nav-toggle nav-menu-item">
+								<i class="fas fa-bars"></i>
+							</button>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../error/Error_404.html" class="nav-menu-link">Temas de salud</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../error/Error_404.html" class="nav-menu-link">Medicinas y suplementos</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../forms/Formulario_busqueda.html" class="nav-menu-link">Búsqueda avanzada</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../error/Error_404.html" class="nav-menu-link">Videos y multimedia</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../forms/Formulario_de_contacto.html" class="nav-menu-link">Contacta con nosotros</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../forms/formulario_de_perfil.html" class="nav-menu-link">Crear perfil de usuario</a>
+						</li>
+						<li class="nav-menu-item">
+							<a href="../../migas_pan.html" class="nav-menu-link">Mapa del sitio</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
-		
-            <p id="ruta_acces"><a href="../../index.html">Página principal</a><em>&gt;</em><a href="Pagina_a.html">Búsqueda por
+		</header>
+            
+        <p id="ruta_acces"><a href="../../index.html">Página principal</a><em>&gt;</em><a href="Pagina_a.html">Búsqueda por
                         inicial: A</a><em>&gt;</em><a href="Accidente_cerebrovascular.html">Accidente
                         cerebrovascular</a></p>
-        </header>
+        
 
         <main>
             <h1>Accidente cerebrovascular</h1>
