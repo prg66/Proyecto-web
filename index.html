@@ -25,6 +25,8 @@
 		<link href="medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" />
 		<link href="maximum.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)"/>
 		<script src="https://kit.fontawesome.com/1767ae2a53.js" crossorigin="anonymous"></script>
+		<script src="boton_noche.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	</head>
 
 	<body>
@@ -39,7 +41,7 @@
 					<div class="barra-superior-2-1">
 						<a href="index.html">
 							<img class="logo" src="imagenes/logo_web_horizontal.png" 
-							alt="Imagen del logo de la web"/>
+							alt="Imagen del logo de la web" id="imagenlogo"/>
 						</a>
 						<form id="form-busqueda"  action="forms/Info_recibida.html">
 							<div class="form-box text-combo">
@@ -54,7 +56,9 @@
 						</form>
 					</div>
 					
-					
+
+ 
+
 					<!--Barra de navegacion por la pagina-->
 					<ul class="nav-menu">
 						<li>
@@ -83,6 +87,12 @@
 						<li class="nav-menu-item">
 							<a href="migas_pan.html" class="nav-menu-link">Mapa del sitio</a>
 						</li>
+						<li class="nav-menu-item">
+							<button class="switch" id="switch">
+								<span><i class="fas fa-sun"></i></span>
+								<span><i class="fas fa-moon"></i></span>
+							</button>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -94,7 +104,6 @@
 				<h1>Bienvenido a Tu Enciclopedia Médica</h1>
 				<p id="descripcion_sitio">Tu sitio web de confianza para consultar articulos de Institutos Nacionales de la salud para pacientes, familiares y amigos.</p>
 			</div>
-
 			<div class="bloque-2">
 				<div class="elemento" id="tabla_contenidos">
 					<h2>Tabla de contenidos</h2>
@@ -127,10 +136,9 @@
 				</div>
 				
 				
-			</div>
-			
-				
-			
+			</div>				
+
+			 </div>
 			<section class="container" id="busqueda_letras">
 				<h2 id="busqueda-por-iniciales">Búsqueda por iniciales</h2>
 				<nav class="container">
@@ -293,6 +301,10 @@
 
 			
 		</footer>
+		<script src="boton_noche.js"></script>
+		  
+		</body>
+	  </html>
 	</body>
 </html>
 

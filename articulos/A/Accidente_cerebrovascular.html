@@ -16,12 +16,14 @@
         <link rel="shortcut icon" href="../../imagenes/Logo_superior.png" type="image/x-icon">
         <!--Icono de la pestaña de web-->
         <link href="../../estilos.css" type="text/css" rel="stylesheet">
-        <link href="../../ruta_y_articulos.css" type="text/css" rel="stylesheet">
 		<link href="../../colores.css" rel="stylesheet" type="text/css" />
 		
 		<link href="../../minimum.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)"/>
 		<link href="../../medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" />
 		<link href="../../maximum.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)"/>
+        <script src="https://kit.fontawesome.com/1767ae2a53.js" crossorigin="anonymous"></script>
+		<script src="../../boton_noche.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	</head>
 
 	<body>
@@ -38,7 +40,7 @@
 				<!--Imagen del encabezado de la web-->
 				<nav id="menu_encabezado" class="nav">
 					<div class="barra-superior-2-1">
-						<a href="index.html">
+						<a href="../../index.html">
 							<img class="logo" src="../../imagenes/logo_web_horizontal.png" 
 							alt="Imagen del logo de la web"/>
 						</a>
@@ -58,11 +60,6 @@
 					
 					<!--Barra de navegacion por la pagina-->
 					<ul class="nav-menu">
-						<li>
-							<button class="nav-toggle nav-menu-item">
-								<i class="fas fa-bars"></i>
-							</button>
-						</li>
 						<li class="nav-menu-item">
 							<a href="../../error/Error_404.html" class="nav-menu-link">Temas de salud</a>
 						</li>
@@ -83,6 +80,12 @@
 						</li>
 						<li class="nav-menu-item">
 							<a href="../../migas_pan.html" class="nav-menu-link">Mapa del sitio</a>
+						</li>
+                        <li class="nav-menu-item">
+							<button class="switch" id="switch">
+								<span><i class="fas fa-sun"></i></span>
+								<span><i class="fas fa-moon"></i></span>
+							</button>
 						</li>
 					</ul>
 				</nav>
@@ -354,6 +357,7 @@
 					</div>
 				</div>
 			</div>
+            <script src="../../boton_noche.js"></script>
         </footer>
     </body>
 
