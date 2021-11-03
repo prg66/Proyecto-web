@@ -40,7 +40,7 @@
 				<!--Imagen del encabezado de la web-->
 				<nav id="menu_encabezado" class="nav">
 					<div class="barra-superior-2-1">
-						<a href="index.html">
+						<a href="../../index.html">
 							<img class="logo" src="../../imagenes/logo_web_horizontal.png" 
 							alt="Imagen del logo de la web"/>
 						</a>
@@ -60,9 +60,10 @@
 					
 					<!--Barra de navegacion por la pagina-->
 					<ul class="nav-menu">
-						<li>
-							<button class="nav-toggle nav-menu-item">
-								<i class="fas fa-bars"></i>
+						<li class="nav-menu-item">
+							<button class="switch" id="switch">
+								<span><i class="fas fa-sun"></i></span>
+								<span><i class="fas fa-moon"></i></span>
 							</button>
 						</li>
 						<li class="nav-menu-item">
@@ -173,11 +174,12 @@
                 <li>Cáncer de tiroides</li>
                 <li>Cáncer uterino</li>
             </ul>
-            <a id="imagen_tipos"></a>
-            <h2>Enlaces a cada tipo de Cancer</h2>
-            <img src="../../imagenes/cuerpo.jpg" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
-            <map id="mapeocuerpo" name="mapeocuerpo">
-
+            @
+            <a id="imagen_c_humano"></a>
+				<h2> Búsqueda de enfermedad por partes del cuerpo</h2>
+				<figure><!--modificar coordenadas de partes del cuerpo-->
+					<img src="../../imagenes/cuerpo.jpg" id="mapa-imagen" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
+                    <map id="mapeocuerpo" name="mapeocuerpo">
                 <area
                     href="https://www.mayoclinic.org/es-es/diseases-conditions/brain-tumor/symptoms-causes/syc-20350084"
                     shape="circle" coords="299,98,25" alt="cabeza / accidende cerebrovascular" />
@@ -377,6 +379,7 @@
             </div>
         </div>
     </footer>
+    <script src="../../boton_noche.js"></script>
 </body>
 
 </html>
