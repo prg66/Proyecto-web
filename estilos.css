@@ -1,4 +1,4 @@
-@media  (min-width: 700px) {
+@media only screen and (min-width: 1001px) and (max-width: 1700px) {
 
 /*Aspectos generales*/
 *{
@@ -430,6 +430,10 @@ ul li ul {
 #temas_destacados p{
     font-size: 20px;
 }
+#temas_destacados h2{
+    color: black;
+
+}
 /*---------------------------------------------------------temas destacados------------------------------------------------------------*/
 #temas-destacados{
     background-color:rgba(191, 240, 248, 0.6);
@@ -439,6 +443,11 @@ ul li ul {
     width:80%;
     margin: 0 auto;
 }
+.articulo-destacado h3{
+    color: black;
+    
+}
+
 .articulo-destacado{
     
     border-color: rgba(0,124,191,255);
@@ -452,7 +461,7 @@ ul li ul {
     
 }
 .articulo-destacado a{
-    color: #ff29ff;
+    color: #000000;
     
 }
 .contenido{display: block; width:75%; text-align: justify;}
@@ -567,7 +576,7 @@ body.dark #ruta_acces a{
 }
 #ruta_acces a:hover{
     text-decoration:none ;
-    color:rgb(236, 9, 168);
+    color:rgb(0, 0, 0);
 }
 main{
     margin-left: 20px;
@@ -676,7 +685,7 @@ section p{
   }
 }
 /*---------------------------------------------------------grande----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media  (min-width: 1700.98px) {
+@media  (min-width: 1701px) {
 
     /*Aspectos generales*/
     *{
@@ -1113,6 +1122,11 @@ section p{
     #temas_destacados p{
         font-size: 20px;
     }
+    #temas_destacados h2{
+        color: black;
+    
+    }
+    
     /*---------------------------------------------------------temas destacados------------------------------------------------------------*/
     #temas-destacados{
         background-color:rgba(191, 240, 248, 0.6);
@@ -1122,6 +1136,11 @@ section p{
         width:80%;
         margin: 0 auto;
     }
+    .articulo-destacado h3{
+        color: black;
+        
+    }
+    
     .articulo-destacado{
         
         border-color: rgba(0,124,191,255);
@@ -1135,7 +1154,7 @@ section p{
         
     }
     .articulo-destacado a{
-        color: #ff29ff;
+        color: #070707;;
         
     }
     .contenido{display: block; width:75%; text-align: justify;}
@@ -1359,98 +1378,99 @@ section p{
       }
     }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media  (min-width: 20) {
+@media only screen and (min-width: 360px) and (max-width:1000px) {
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
 
-    *{
-        margin: 0;
-        box-sizing: border-box;
-        
-    }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+body{
+    -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+body.dark {
+    background: #111111;
+  }
+  
+body,p {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1;
+}
+
+html {
+    font-size:100%
+}
+
+article,aside,figcaption,figure,footer,header,menu,nav,section {
+ display:block;
+}
+
+body.dark .barra-superior-2-1{
+    background-color: black;
+    color: blanchedalmond;
     
+}
+
+body.dark .imagenlogo{
+    background-color: rgb(248, 245, 245);
+    color: blanchedalmond;
     
+}
+
+
+
+
+/*Titulos y encabezados*/
+h1,h2,h3,h4,h5,h6{
+    font-weight:bold
+}
+
+h1{
+    font-size:1.7em;
+    line-height:1em;
+    margin-bottom:.5em
+}
+
+h2{
+    font-size:1.3em;
+    line-height:1.5em;
+    margin-bottom:.5em
+}
+
+h3{
+    font-size:1.1em;
+    line-height:2em;
+    margin-bottom:.5em
+}
+
+h4 {
+    font-size:1em;
+    line-height:2.14286em;
+    margin-bottom:.28571em
+}
+
+/*Cuerpo de la pagina web*/
+
+p {
+    margin:0 0 1.42857em 0;
     
-    /* Medium devices (landscape tablets, 768px and up) */
+}
+
+p img {
+    margin:0
+}
+
+em {
+    font-style:italic
+}
+/*Tablas*/
+
     
-    body{
-        -webkit-transition: .3s ease all;
-      transition: .3s ease all;
-    }
-    body.dark {
-        background: #111111;
-      }
-      
-    body,p {
-        font-family:Arial, Helvetica, sans-serif;
-        line-height:0.5;
-    }
-    
-    html {
-        font-size:100%
-    }
-    
-    article,aside,figcaption,figure,footer,header,menu,nav,section {
-     display:block;
-    }
-    
-    body.dark .barra-superior-2-1{
-        background-color: black;
-        color: blanchedalmond;
-        
-    }
-    
-    body.dark .imagenlogo{
-        background-color: rgb(248, 245, 245);
-        color: blanchedalmond;
-        
-    }
-    
-    
-    
-    
-    /*Titulos y encabezados*/
-    h1,h2,h3,h4,h5,h6{
-        font-weight:bold
-    }
-    
-    h1{
-        font-size:0.7em;
-        line-height:0.5em;
-        margin-bottom:.25em
-    }
-    
-    h2{
-        font-size:0.5em;
-        line-height:0.5em;
-        margin-bottom:.25em
-    }
-    
-    h3{
-        font-size:0.4em;
-        line-height:0.2em;
-        margin-bottom:.25em
-    }
-    
-    h4 {
-        font-size:0.3em;
-        line-height:0.14286em;
-        margin-bottom:.28571em
-    }
-    
-    /*Cuerpo de la pagina web*/
-    
-    p {
-        margin:0 0 0.42857em 0;
-        
-    }
-    
-    p img {
-        margin:0
-    }
-    
-    em {
-        font-style:italic
-    }
-    /*Tablas*/
     
     
     
@@ -1626,14 +1646,14 @@ section p{
         }
         header ul li{
             display:inline-block;
-            width:10px;            
+            width:5em;            
     
         }
         header ul li a{
-            font-size:0.5%;
+            font-size:1em;
                 
                 display:block;
-                padding: 0.5em 1em;
+                padding: 2em 1em;
                 text-decoration: none;
                 
         }
@@ -1695,7 +1715,7 @@ section p{
     
     #tabla_contenidos ul li{
         list-style:none;
-        padding-right:1.3em;
+        padding-right:0.3em;
     }
     
     #tabla_contenidos ul li a{
@@ -1711,8 +1731,8 @@ section p{
     /*Busqueda por iniciales*/
     
     .container{
-        padding: 20px;
-        padding-right: 20px;
+        padding: 5px;
+        padding-right: 5px;
     }
     
     #busqueda_letras ul li{
@@ -1725,10 +1745,10 @@ section p{
     #busqueda_letras nav ul li a{
         
         display:block;
-        padding:10px 10px;
+        padding:5px 5px;
         margin-right:0px;
         text-decoration: none;
-        
+        font-size:1em ;
         border: 1px solid rgba(25,25,25);
         /*background-color:rgb(179, 236, 157);
         border-radius: 5px;*/
@@ -1771,8 +1791,8 @@ section p{
         justify-content: center; */
     }
     #mapa-imagen{
-        width: 600px;
-        height: 600px;
+        width: 300px;
+        height: 300px;
     }
     
     .busqueda_visual h2{
@@ -1787,13 +1807,18 @@ section p{
         justify-content: center;
     }
     #temas_destacados p{
-        font-size: 20px;
+        font-size: 5px;
     }
+    #temas_destacados h2{
+        color: black;
+    
+    }
+
     /*---------------------------------------------------------temas destacados------------------------------------------------------------*/
     #temas-destacados{
         background-color:rgba(191, 240, 248, 0.6);
         border-color: rgba(0,124,191,255);
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         width:80%;
         margin: 0 auto;
@@ -1810,8 +1835,12 @@ section p{
         overflow: hidden;
         
     }
+    .articulo-destacado h3{
+        color: black;
+        
+    }
     .articulo-destacado a{
-        color: #ff29ff;
+        color: #000000;
         
     }
     .contenido{display: block; width:75%; text-align: justify;}
@@ -1925,7 +1954,9 @@ section p{
     
     }
     #ruta_acces a:hover{
-        text-decoration:none ;
+        color:rgb(236, 9, 168);
+    }
+    body.dark #ruta_acces a:hover{
         color:rgb(236, 9, 168);
     }
     main{
@@ -1953,8 +1984,8 @@ section p{
     }
     main ul li::before{
         content: '';
-        width:20px;
-        height: 20px;
+        width:10px;
+        height: 10px;
         position:absolute;
         background-image: url('imagenes/friends_link_send_share_icon_123609.png');
         background-size: cover;
