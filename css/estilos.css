@@ -661,6 +661,9 @@ section p{
     border-radius: 5px;
 
 }
+body.dark label{
+    color:blanchedalmond;
+}
 .switch {
     background: #343D5B;
     border-radius: 1000px;
