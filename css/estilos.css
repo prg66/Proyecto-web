@@ -118,6 +118,7 @@ ul ul li {
     justify-content:center;
     text-align:center;
 }
+
 .contenido p{
     background-color: rgb(179, 236, 157);
 
@@ -368,7 +369,7 @@ ul li ul {
     padding-right: 20px;
 }
 
-#busqueda_letras ul li{
+#busqueda_letras nav ul li{
     display:inline-block;
     margin:0;
     padding-left: 0px;
@@ -406,7 +407,7 @@ ul li ul {
 
 
 /*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
-.busqueda_visual{
+.busqueda_visual1{
     display: block;
     justify-content: center;
     padding: 1em;
@@ -415,7 +416,7 @@ ul li ul {
     width: 100%;
     
     }
-.busqueda_visual figure{
+.busqueda_visual1 figure{
     text-align: center;
     display: block;
     /*text-justify: center;
@@ -427,15 +428,15 @@ ul li ul {
     width: 600px;
     height: 600px;
 }
-#mapa-imagen-mov{
-    display:none;
-}
 
-.busqueda_visual h2{
+.busqueda_visual1 h2{
     padding-bottom: 10px;
     margin: 10px;
     display: block;
     text-align: center;
+}
+.busqueda_visual2{
+    display: none;
 }
 
 /*---------------------------------------------------------busqueda visual------------------------------------------------------------*/
@@ -618,7 +619,8 @@ section{
 body.dark section ul li{
     color: blanchedalmond;
     position: relative;
-    padding-left: 30px;
+    padding-left: 50px;
+    margin: 20px;
 }
 main ul li::before{
     content: '';
@@ -635,6 +637,7 @@ main ul li::before{
 section ul li a{
     text-decoration: none;
     color: black;
+padding: 20px;
 }
 body.dark section ul li a{
     text-decoration: none;
@@ -645,7 +648,7 @@ section ul li a:hover{
 }
 section h2{margin:1em 5em;}
 section p{
-    background-color:rgb(255,255,255,0.6) ;
+    background-color:rgb(179, 236, 157);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.3em;
@@ -741,7 +744,9 @@ section p{
         box-sizing: border-box;
         
     }
-    
+    #descripcion_sitio {
+        font-size: 100px;
+    }
     
     
     /* Medium devices (landscape tablets, 768px and up) */
@@ -1025,11 +1030,11 @@ section p{
     /*---------------------------------------------------------barra de arriba------------------------------------------------------------*/
     
     #titulo h1{
-        font-size: 30px;
+        font-size: 3rem;
     }
     #titulo p{
       font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-      font-size: 20px;
+      font-size: 2rem;
       text-justify:auto;
       padding:0;
     }
@@ -1038,12 +1043,15 @@ section p{
     }
     body.dark #titulo p{
         font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-        font-size: 20px;
+        font-size: 2rem;
         text-justify:auto;
         padding:0;
         color: #F1F1F1;
       }
     /*--------------------------------------------------------------titulo y desc-------------------------------------------------------*/
+    h1 {
+        font-size: 300em;
+    }
     .bloque-2{
         display:flex;
         
@@ -1052,7 +1060,9 @@ section p{
         
         
     }
-    
+    section ul li{
+        font-size: 20px;
+    }
     .tabla_contenidos{
         
         padding: 1.3em 5em 0 1.3em ;
@@ -1139,7 +1149,7 @@ section p{
     
     
     /*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
-    .busqueda_visual{
+    .busqueda_visual1{
         display: block;
         justify-content: center;
         padding: 1em;
@@ -1148,7 +1158,7 @@ section p{
         width: 100%;
         
         }
-    .busqueda_visual figure{
+    .busqueda_visual1 figure{
         text-align: center;
         display: block;
         /*text-justify: center;
@@ -1160,15 +1170,15 @@ section p{
         width: 600px;
         height: 600px;
     }
-    #mapa-imagen-mov{
-        display:none;
-    }
     
-    .busqueda_visual h2{
+    .busqueda_visual1 h2{
         padding-bottom: 10px;
         margin: 10px;
         display: block;
         text-align: center;
+    }
+    .busqueda_visual2{
+        display: none;
     }
     
     /*---------------------------------------------------------busqueda visual------------------------------------------------------------*/
@@ -1718,11 +1728,11 @@ em {
     /*---------------------------------------------------------barra de arriba------------------------------------------------------------*/
     
     #titulo h1{
-        font-size: 10px;
+        font-size: 2rem;
     }
     #titulo p{
       font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-      font-size: 7px;
+      font-size: 1rem;
       text-justify:auto;
       padding:0;
     }
@@ -1795,7 +1805,7 @@ em {
     #busqueda_letras ul li{
         display:inline-block;
         margin:0;
-        padding-left: 0px;
+        padding: 0px;
         
     }
     
@@ -1830,7 +1840,7 @@ em {
     
     
     /*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
-    .busqueda_visual{
+    .busqueda_visual2{
         display: block;
         justify-content: center;
         padding: 1em;
@@ -1839,7 +1849,7 @@ em {
         width: 100%;
         
         }
-    .busqueda_visual figure{
+    .busqueda_visual2 figure{
         text-align: center;
         display: block;
         /*text-justify: center;
@@ -1847,19 +1857,19 @@ em {
         margin-right: auto;
         justify-content: center; */
     }
-    #mapa-imagen{
-        display: none;
-    }
     #mapa-imagen-mov{
         width: 300px;
         height: 300px;
     }
     
-    .busqueda_visual h2{
+    .busqueda_visual1 h2{
         padding-bottom: 10px;
         margin: 10px;
         display: block;
         text-align: center;
+    }
+    .busqueda_visual1{
+        display: none;
     }
     
     /*---------------------------------------------------------busqueda visual------------------------------------------------------------*/
