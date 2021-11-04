@@ -1,0 +1,7 @@
+body {
+    font-family: verdana,helvetica;
+    color: #ffffff; /* texto blanco */
+    background-color: #000000; /* fondo negro */
+    font-size: 36px;
+}
+h1,h2,h3,h4,h5,h6{color:#fff;}

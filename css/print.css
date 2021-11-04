@@ -1,0 +1,41 @@
+@media print {
+    /* Contenido del fichero print.css */
+    header, footer, nav, aside {
+        display: none;
+    }
+    
+    body {
+        background-image: none;
+    }
+
+    a:after {
+        content:" <" attr(href) ">";
+    }
+
+    a[href^=http]:after {
+        content:" <" attr(href) ">";
+    }
+
+    h3,h4,h5,h6 {
+        page-break-before: always;
+    }
+
+    h3 + h3 {
+        page-break-before: always;
+    }
+
+    ul, img, table, section {
+        page-break-inside: avoid;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  }
