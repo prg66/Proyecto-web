@@ -13,7 +13,7 @@
 
 body{
     -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+    transition: .3s ease all;
 }
 body.dark {
     background: #111111;
@@ -303,43 +303,53 @@ body.dark #titulo p{
 /*--------------------------------------------------------------titulo y desc-------------------------------------------------------*/
 .bloque-2{
     display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 20em;
+    margin-right: 20em;
     
     
-    overflow: hidden;
+    /*overflow: hidden;*/
     
     
 }
 
-#tabla_contenidos{
-    float: left;
-    padding: 1.3em 5em 0 1.3em ;
+.tabla_contenidos{
+    
+    padding: 1.3em auto 1.3em ;
     text-align: left;
-    display:inline;
+    display:block;
     margin: 0% 10%;
     border-width: 2px;
     border-style: solid;
-    margin-right:80%;
-    margin-left: 5%;
+    
     margin-top:0;
     margin-bottom: 0;
     
+    
 }
-body.dark #tabla_contenidos h2{
+
+.tabla_contenidos ul li{
+    
+    padding:0.3em 1em;
+}
+
+body.dark .tabla_contenidos h2{
     color: #F1F1F1;
     
 }
 
-#tabla_contenidos ul{
+.tabla_contenidos ul{
     margin-left: 10px;
     margin-top: 10px;
 }
 
-#tabla_contenidos ul li{
+.tabla_contenidos ul li{
     list-style:none;
     padding-right:1.3em;
 }
 
-#tabla_contenidos ul li a{
+.tabla_contenidos ul li a{
     text-decoration: none;
 }
 
@@ -544,16 +554,21 @@ img{
     width:80%;
     height:auto;
 }
-#ruta_acces{
+.ruta_acces{
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     color:black;
-    padding: 20px ;
-    background-color:rgb(179, 236, 157);
-    border-color: cadetblue;
-    border-radius: 5px;
-
+    padding: 1em ;
+    text-align: left;
+    display:block;
+    
+    
+    background-color:rgb(166, 202, 222);
 }
+.ruta_acces a{
+    color:black;
+}
+.ruta_acces em{font-weight: bold;}}
 body.dark #ruta_acces{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
@@ -627,14 +642,17 @@ body.dark section ul li a{
 section ul li a:hover{
     background-color:darkkhaki;
 }
+section h2{margin:1em 5em;}
 section p{
-    background-color:rgb(179, 236, 157) ;
+    background-color:rgb(255,255,255,0.6) ;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
     color:black;
     padding: 20px ;
     margin: 10px;
-    
+    text-align: justify;
+    margin:1em 5em;
     border-color: cadetblue;
     border-radius: 5px;
 
@@ -686,6 +704,32 @@ section p{
     background: none;
     color: #fff;
   }
+#titulo-mapa-web{
+    margin: 1% 25%;
+}
+.mapa-web{
+    
+    margin: 0 30%;
+    background-color:rgba(191, 240, 248, 0.6);
+    border-color: rgba(0,124,191,255);
+    border-width: 2px;
+    border-style: solid;
+}
+
+.l1{
+    list-style: initial;
+    padding:.9em;
+}
+.l1 a{
+    text-decoration: underline;
+}
+.l2{
+    list-style: initial;
+    padding:.8em;
+}
+.l3{
+    list-style: initial;
+    padding:.5em;
 }
 /*---------------------------------------------------------grande----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media  (min-width: 1701px) {
@@ -1005,41 +1049,43 @@ section p{
         
     }
     
-    #tabla_contenidos{
-        float: left;
+    .tabla_contenidos{
+        
         padding: 1.3em 5em 0 1.3em ;
         text-align: left;
-        display:inline;
+        
         margin: 0% 10%;
         border-width: 2px;
         border-style: solid;
-        margin-right:100%;
-        margin-left: 2%;
-        margin-top:0;
-        margin-bottom: 0;
+        
+        
+        
+        display: flex; 
+        justify-content: center; 
+        width: 100%;
         
     }
-    body.dark #tabla_contenidos h2{
+    body.dark .tabla_contenidos h2{
         color: #F1F1F1;
         
     }
     
-    #tabla_contenidos ul{
+    .tabla_contenidos ul{
         margin-left: 40px;
         margin-top: 10px;
     }
     
-    #tabla_contenidos ul li{
+    .tabla_contenidos ul li{
         list-style:none;
         padding-right:1.3em;
     }
     
-    #tabla_contenidos ul li a{
+    .tabla_contenidos ul li a{
         text-decoration: none;
     }
     
     
-    .elemento{display: flex; justify-content: center; width: 100%;}
+    
     ul li ul {
         padding-left: 20px;
     }
@@ -1695,7 +1741,7 @@ em {
         
     }
     
-    #tabla_contenidos{
+    .tabla_contenidos{
         float: left;
         padding: 0.3em 2em 0 0.3em ;
         text-align: left;
@@ -1714,17 +1760,17 @@ em {
         
     }
     
-    #tabla_contenidos ul{
+    .tabla_contenidos ul{
         margin-left: 10px;
         margin-top: 10px;
     }
     
-    #tabla_contenidos ul li{
+    .tabla_contenidos ul li{
         list-style:none;
         padding-right:0.3em;
     }
     
-    #tabla_contenidos ul li a{
+    .tabla_contenidos ul li a{
         text-decoration: none;
     }
     

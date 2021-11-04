@@ -1,167 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <title>Enciclopedia Médica | Inicio</title>
-    <!--Titulo de la pagina-->
-    <meta charset="utf-8" />
-    <!--Codificacion del documento-->
-    <meta name="description" content="Sitio web de consultas sobre temas de salud." />
-    <!--Breve descripcion del sitio web-->
-    <meta name="keywords" content="enciclopedia, medica, medicina" />
-    <!--Palabras clave de la pagina-->
-    <meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera" />
-    <!--Nombre del autor del contenido de la web-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Ajuste de escala para visualizacion en diferentes dispositivos-->
-    <link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon" />
-    <!--Icono de la pestaña de web-->
-    <link href="estilos.css" type="text/css" rel="stylesheet">
-        <link href="ruta_y_articulos.css" type="text/css" rel="stylesheet">
-		<link href="colores.css" rel="stylesheet" type="text/css" />
-		
-		<link href="minimum.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)"/>
-		<link href="medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" />
-		<link href="maximum.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)"/>
-	</head>
+    <head>
+        <title>Enciclopedia Médica | Inicio</title>
+        <!--Titulo de la pagina-->
+        <meta charset="utf-8" />
+        <!--Codificacion del documento-->
+        <meta name="description" content="Sitio web de consultas sobre temas de salud." />
+        <!--Breve descripcion del sitio web-->
+        <meta name="keywords" content="enciclopedia, medica, medicina" />
+        <!--Palabras clave de la pagina-->
+        <meta name="author" content="Pablo Rocamora García y Mario Amorós Rivera" />
+        <!--Nombre del autor del contenido de la web-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Ajuste de escala para visualizacion en diferentes dispositivos-->
+        <!--Icono de la pestaña de web-->
+        <link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon"/>
+        <!--Estilos-->
+        <link href="css/estilos.css" type="text/css" rel="stylesheet"/>
+        <link href="css/ruta_y_articulos.css" type="text/css" rel="stylesheet"/>
+        <link href="css/colores.css" rel="stylesheet" type="text/css" />
+        <!--Scripts-->
+        
+        <script src="js/boton_noche.js" crossorigin="anonymous"></script>
+        <!--Iconos-->
+        <script src="https://kit.fontawesome.com/1767ae2a53.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
 
 	<body>
-		<body>
-            <header class="header">
-                <div id="barra-superior-1">
-                    <a id="enlace-top" href="https://www.nlm.nih.gov/" hreflang="en-us">U.S. National Library of Medicine</a>
-                    
-                    
-                </div>
-                
-                <div id="barra-superior-2">
-                    
-                    
-                    <!--Imagen del encabezado de la web-->
-                    <nav id="menu_encabezado" class="nav">
-                        <div class="barra-superior-2-1">
-                            <a href="index.html">
-                                <img class="logo" src="imagenes/logo_web_horizontal.png" 
-                                alt="Imagen del logo de la web"/>
-                            </a>
-                            <form id="form-busqueda"  action="forms/Info_recibida.html">
-                                <div class="form-box text-combo">
-                                    <div class="form-area">
-                                        <label class="hide-offscreen" for="searchtext_primary">Buscar en Tu Enciclopedia Médica</label>
-                                        <input required id="searchtext_primary" class="form-text" type="text" placeholder="¿Qué desea buscar?" alt="#Site Search input"  maxlength="400" size="40"/>
-                                    </div>
-                                    <div class="button-area">
-                                      <button class="form-btn" title="Introduzca una patología" alt="Search MedlinePlus" type="submit">IR</button>
-                                    </div>
+        <header class="header">
+            <div id="barra-superior-1">
+                <a id="enlace-top" class="link-ext" href="https://www.nlm.nih.gov/" hreflang="en-us">U.S. National Library of Medicine</a>        
+            </div>
+            
+            <div id="barra-superior-2">
+                <!--Imagen del encabezado de la web-->
+                <nav id="menu_encabezado" class="nav">
+                    <div class="barra-superior-2-1">
+                        <a href="index.html">
+                            <img class="logo" src="imagenes/logo_web_horizontal.png" 
+                            alt="Imagen del logo de la web"/>
+                        </a>
+                        <form id="form-busqueda"  action="forms/Info_recibida.html">
+                            <div class="form-box text-combo">
+                                <div class="form-area">
+                                    <label class="hide-offscreen" for="searchtext_primary">Buscar en Tu Enciclopedia Médica</label>
+                                    <input required id="searchtext_primary" class="form-text" type="text" placeholder="¿Qué desea buscar?" alt="#Site Search input"  maxlength="400" size="40"/>
                                 </div>
-                            </form>
-                        </div>
-                        
-                        
-                        <!--Barra de navegacion por la pagina-->
-                        <ul class="nav-menu">
-                            <li class="nav-menu-item">
-                                <button class="switch" id="switch">
-                                    <span><i class="fas fa-sun"></i></span>
-                                    <span><i class="fas fa-moon"></i></span>
-                                </button>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="error/Error_404.html" class="nav-menu-link">Temas de salud</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="error/Error_404.html" class="nav-menu-link">Medicinas y suplementos</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="forms/Formulario_busqueda.html" class="nav-menu-link">Búsqueda avanzada</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="error/Error_404.html" class="nav-menu-link">Videos y multimedia</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="forms/Formulario_de_contacto.html" class="nav-menu-link">Contacta con nosotros</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="forms/formulario_de_perfil.html" class="nav-menu-link">Crear perfil de usuario</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a href="migas_pan.html" class="nav-menu-link">Mapa del sitio</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+                                <div class="button-area">
+                                    <button class="form-btn" title="Introduzca una patología" alt="Search MedlinePlus" type="submit">IR</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!--Barra de navegacion por la pagina-->
+                    <ul class="nav-menu">
+                        <li class="nav-menu-item">
+                            <button class="switch" id="switch">
+                                <span><i class="fas fa-sun"></i></span>
+                                <span><i class="fas fa-moon"></i></span>
+                            </button>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="error/Error_404.html" class="nav-menu-link">Temas de salud</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="error/Error_404.html" class="nav-menu-link">Medicinas y suplementos</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="forms/Formulario_busqueda.html" class="nav-menu-link">Búsqueda avanzada</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="error/Error_404.html" class="nav-menu-link">Videos y multimedia</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="forms/Formulario_de_contacto.html" class="nav-menu-link">Contacta con nosotros</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="forms/formulario_de_perfil.html" class="nav-menu-link">Crear perfil de usuario</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="migas_pan.html" class="nav-menu-link">Mapa del sitio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <main>
-        <h1>MAPA DE LA WEB</h1>
-        <h2>JERARQUÍA DE LA PÁGINA</h2>
-        <nav>
-            <!--Barra de busqueda alfabética-->
-            <ul>
-                <li><a href="index.html">Página inicial</a>
-                <ol>
-                    <li>articulo A
-                    <ol>
-                        <li><a href="articulos/A/Pagina_a.html">indice de la letra A</a>
-                            <ol>
-                                <li><a href="articulos/A/Accidente_cerebrovascular.html">accidente cerebrovascular</a>
-                                </li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-                    <li>articulo B
-                    <ol>
-                        <li><a href="articulos/B/Pagina_b.html">indice de la letra B</a>
-                            <ol>
-                                <li><a href="articulos/B/Bronquitis.html">bronquitis</a></li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-                    <li>articulo C
-                    <ol>
-                        <li><a href="articulos/C/Pagina_c.html">indice de la letra C</a>
-                            <ol>
-                                <li><a href="articulos/C/Covid_19.html">Covid_19</a></li>
-                                <li><a href="articulos/C/Cancer.html">Cancer</a></li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-                    <li>articulo D
-                    <ol>
-                        <li><a href="articulos/D/Pagina_d.html">indice de la letra D</a>
-                            <ol>
-                                <li><a href="articulos/D/Diabetes.html">accidente cerebrovascular</a></li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-                    <li>articulo E
-                    <ol>
-                        <li><a href="articulos/E/Pagina_e.html">indice de la letra E</a>
-                            <ol>
-                                <li><a href="articulos/E/Enfermedades_contagiosas.html">enfermedades contagiosas</a>
-                                </li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-                    <li>articulo I
-                    <ol>
-                        <li><a href="articulos/I/Pagina_i.html">indice de la letra I</a>
-                        <li><a href="articulos/I/Indice_de_masa_corporal.html">indice de masa corporal</a></li>
-                    </ol>
-                    </li>
-                    <li><a href="forms/Form.html">formulario de información</a></li>
-                    <li><a href="forms/Formulario_de_contacto.html">formulario de contacto</a></li>
-                    <li><a href="forms/formulario_de_perfil.html">fornulario para crear perfil</a></li>
-                </ol>
-                </li>
-                <li><a href="migas_pan.html">información de las páginas disponibles</a></li>
-            </ul>
-        </nav>
+        <h1>Mapa del sitio web</h1>
 
+        <div>
+            <h2 id="titulo-mapa-web">Jerarquía del sitio web</h2>
+            
+            <!--Barra de busqueda alfabética-->
+            <ul class="mapa-web">
+                <li class="l1">
+                    <a href="index.html">Página inicial</a>
+                    <ul>
+                        <!--A-->
+                        <li class="l2">
+                            <a href="articulos/A/Pagina_a.html">Índice: A</a>
+                            <ul>
+                                <li class="l3">
+                                    <a href="articulos/A/Accidente_cerebrovascular.html">accidente cerebrovascular</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--B-->
+                        <li class="l2">
+                            <a href="articulos/B/Pagina_b.html">Índice: B</a>
+                            <ul>
+                                <li class="l3">
+                                    <a href="articulos/B/Bronquitis.html">Bronquitis</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--C-->
+                        <li class="l2">
+                            <a href="articulos/C/Pagina_c.html">Índice: C</a>
+                            <ul>
+                                <li class="l3">
+                                    <a href="articulos/C/Cancer.html">Cáncer</a>
+                                </li>
+                                <li class="l3">
+                                    <a href="articulos/C/Covid_19.html">Covid-19</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--D-->
+                        <li class="l2">
+                            <a href="articulos/D/Pagina_d.html">Índice: D</a>
+                            <ul>
+                                <li class="l3">
+                                    <a href="articulos/D/Diabetes.html">Diabetes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!--I-->
+                        <li class="l2">
+                            <a href="articulos/I/Pagina_i.html">Índice: I</a>
+                            <ul>
+                                <li>
+                                    <a href="articulos/I/Indice_de_masa_corporal.html">Índice de masa corporal</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="l1">
+                    <a href="forms/Form.html">Búsqueda avanzada</a>
+                </li>
+                
+                <li class="l1">
+                    <a href="forms/Formulario_de_contacto.html">Formulario de contacto</a>
+                </li>
+                
+                <li class="l1">
+                    <a href="forms/formulario_de_perfil.html">Crear perfil</a>
+                </li>
+                
+                <li class="l1">
+                    <a href="migas_pan.html">Mapa del sitio</a>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <footer>
@@ -188,6 +196,7 @@
 						<a href=declaracion_acces.html>Declaración de accesibilidad</a>
 					<figure>
 						<img src="imagenes/logo-ua.jpg" alt="foto de logo de universidad de alicante" width="259" height="44" />
+                        <a href="https://www.ua.es/" class="link-ext" id="link-ua">Universidad de Alicante</a>
 					</figure>
 					</div>
 				<div id="bloque-1-2">

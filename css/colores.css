@@ -74,16 +74,16 @@ header li a:hover{
     color: #000000;
 }
 
-#tabla_contenidos{
+.tabla_contenidos{
     background-color:rgba(191, 240, 248, 0.6);
     border-color: rgba(0,124,191,255);
 }
 
-#tabla_contenidos ul li a{
+.tabla_contenidos ul li a{
     color: #000000;
 }
 
-#tabla_contenidos ul li a:hover{
+.tabla_contenidos ul li a:hover{
     background-color:#008f70;
     color: #ddf8f6;
 }
