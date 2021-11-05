@@ -24,9 +24,6 @@ thead, tfoot,th {
     color: var(--color-fondo);background-color:rgb(179, 236, 157,1);
 }
 
-thead th, tfoot th, tfoot td {
-    background: linear-gradient(bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
-}
 
 input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="password"], textarea, select{
     background-color:#ffffff;

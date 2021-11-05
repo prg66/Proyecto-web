@@ -328,7 +328,7 @@ body.dark #titulo p{
 
 .tabla_contenidos{
     
-    padding: 1.3em auto 1.3em ;
+    padding: 1.3em  1.3em ;
     text-align: left;
     display:block;
     margin: 0% 10%;
@@ -511,7 +511,6 @@ footer{
     text-align:center;
     text-decoration: underline black ;
     font-weight:bold;
-    text-shadow: azure;
     font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
 }
 .bloque{
@@ -687,8 +686,8 @@ section p{
     height: 30px;
     position: absolute;
     background: #F1F1F1;
-    top: 1;
-    left: 1;
+    top: 1em;
+    left: 1em;
     right: unset;
     border-radius: 100px;
     -webkit-transition: .3s ease all;
@@ -703,7 +702,7 @@ section p{
   }
   
   .switch.active::after {
-    right: 1;
+    right: 1em;
     left: unset;
   }
   
