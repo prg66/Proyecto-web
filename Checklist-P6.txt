@@ -1,0 +1,12 @@
+En el desarrollo de la practica 6 se han realizado las siguientes tareas mencionadas a continuación:
+- Restructuracion de las paginas(nuevos directorios para archivos css y js)
+- Creacion de modo oscuro.
+- Creacion de css con letra grande 
+- Creacion de modo de impresion
+- Creacion del modo de alto contraste
+- Creacion del modo de alto contraste con letra grande
+- Correcciones en el diseño responsive
+- Cambios en algunos colores de la pagina
+- Inclusion de una barra superior buscadora
+- Creacion de codigo javascript para la transicion al modo oscuro
+- Correccion de fallos previos

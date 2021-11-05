@@ -12,9 +12,10 @@
 		<!--Icono de la pestaña de web-->
 		<link rel="shortcut icon" href="imagenes/Logo_superior.png" type="image/x-icon"/>
 		<!--Estilos-->
+		<link href="css/estilos.css" type="text/css" rel="stylesheet" title="Diseño principal"/>
+		<link title="Letra grande con alto contraste" rel="stylesheet" href="css/letra-grande-alto-contraste.css" type="text/css"/>
 		<link rel="stylesheet" href="css/letra-grande.css" type="text/css" title="Letra grande"/>
-		<link href="css/estilos.css" type="text/css" rel="alternative stylesheet" title="Diseño principal"/>
-		<link href="css/colores.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/alto_contraste.css" type="text/css" rel="stylesheet" title="Alto contraste">
 		<link href="css/print.css" rel="stylesheet" type="text/css" title="Diseño de impresion"/>
 		
 		<!--Iconos-->
@@ -40,10 +41,10 @@
 							<div class="form-box text-combo">
 								<div class="form-area">
 									<label class="hide-offscreen" for="searchtext_primary">Buscar en Tu Enciclopedia Médica</label>
-									<input required id="searchtext_primary" class="form-text" type="text" placeholder="¿Qué desea buscar?" alt="#Site Search input"  maxlength="400" size="40"/>
+									<input required id="searchtext_primary" class="form-text" type="text" placeholder="¿Qué desea buscar?" maxlength="400" size="40"/>
 								</div>
 								<div class="button-area">
-								  <button class="form-btn" title="Introduzca una patología" alt="Search MedlinePlus" type="submit">IR</button>
+								  <button class="form-btn" title="Introduzca una patología" type="submit">IR</button>
 								</div>
 							</div>
 						</form>
@@ -133,10 +134,8 @@
 					
 				</div>
 				
-				
-			</div>				
-
-			 </div>
+			</div>	
+			
 			<section class="container" id="busqueda_letras">
 				<h2 id="busqueda-por-iniciales">Búsqueda por iniciales</h2>
 				<nav class="container" id="busq-letras">
@@ -245,7 +244,7 @@
 			</section>
 
 			<section class="busqueda_visual1">
-				<a id="imagen_c_humano"></a>
+				<a class="imagen_c_humano"></a>
 				<h2> Búsqueda de enfermedad por partes del cuerpo</h2>
 				<figure><!--modificar coordenadas de partes del cuerpo-->
 					<img src="imagenes/cuerpo.jpg" id="mapa-imagen" usemap="#mapeocuerpo" alt="imagen del cuerpo humano" />
@@ -262,7 +261,7 @@
 				</figure>
 			</section>
 			<section class="busqueda_visual2">
-				<a id="imagen_c_humano"></a>
+				<a class="imagen_c_humano"></a>
 				<h2> Búsqueda de enfermedad por partes del cuerpo</h2>
 				<figure><!--modificar coordenadas de partes del cuerpo-->
 					<img src="imagenes/cuerpo.jpg" id="mapa-imagen-mov" usemap="#mapeocuerpo2" alt="imagen del cuerpo humano" />
@@ -271,7 +270,7 @@
 							alt="cabeza / accidende cerebrovascular" />
 						<area href="articulos/B/Bronquitis.html" shape="rect" coords="127,121,137,143"
 							alt=" pulmon / bronquitis" />
-						<area href="articulos/B/Bronquitis.html" shape="rect" coords="176,119,167,141"
+						<area href="articulos/B/Bronquitis.html" shape="rect" coords="167,119,176,141"
 							alt=" pulmon / bronquitis" />
 						<area href="articulos/D/Diabetes.html" shape="poly" coords="136,176,152,181,3157,175"
 							alt=" pancreas / Diabetes" />
@@ -391,8 +390,7 @@
 		</footer>
 		<script src="js/boton_noche.js"></script>
 		  
-		</body>
-	  </html>
 	</body>
 </html>
+	
 
