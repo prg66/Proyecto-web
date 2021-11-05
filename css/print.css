@@ -154,7 +154,7 @@ textarea {
 #enlace-top:hover{
     text-decoration:underline;
 }
-nav,form{
+nav,form,.switch{
     display: none;
 }
 a{
