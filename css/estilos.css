@@ -2246,5 +2246,418 @@ em {
         background-color:var(--color-encabezado);
     }
     
-    footer{background-color:rgba(0,130,200,255);}
+    footer{background-color:rgba(0,130,200,255)
+  
+    }
+    @media print {
+        /* Contenido del fichero print.css */
     
+        
+    
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    
+    body{
+        -webkit-transition: .3s ease all;
+        transition: .3s ease all;
+    }
+    body.dark {
+        background: #111111;
+      }
+      
+    body,p {
+        font-family:Arial, Helvetica, sans-serif;
+        line-height:1;
+    }
+    
+    html {
+        font-size:100%
+    }
+    
+    article,aside,figcaption,figure,footer,header,menu,nav,section {
+     display:block;
+    }
+    
+    body.dark .barra-superior-2-1{
+        background-color: black;
+        color: blanchedalmond;
+        
+    }
+    
+    body.dark .imagenlogo{
+        background-color: rgb(248, 245, 245);
+        color: blanchedalmond;
+        
+    }
+    
+    
+    
+    /*Titulos y encabezados*/
+    h1,h2,h3,h4,h5,h6{
+        font-weight:bold
+    }
+    
+    h1{
+        font-size: 18pt;;
+        line-height:1cm;
+        margin-bottom:.5cm
+    }
+    
+    h2{
+        font-size:16pt;
+        line-height:1cm;
+        margin-bottom:0.5cm;
+    }
+    
+    h3{
+        font-size:14pt;
+        line-height:1cm;
+        margin-bottom:.5cm
+    }
+    
+    h4 {
+        font-size:13pt;
+        line-height:1cm;
+        margin-bottom:.5cm
+    }
+    
+    /*Cuerpo de la pagina web*/
+    
+    
+    
+    /*Listas*/
+    ol,ul {
+        list-style:none
+    }
+    
+    ul ul {
+        margin:.3cm 0 .3cm 1cm
+    }
+    
+    ul ul li {
+     margin-bottom:1cm
+    }
+    
+    #busqueda_letras nav{
+        text-align:center;
+    
+    }
+    .container{
+    
+        margin-left: auto;
+        margin-right: auto;
+        align-content:center;
+        justify-content:center;
+        text-align:center;
+    }
+    
+    .contenido p{
+        background-color: rgb(179, 236, 157);
+    
+    }
+    
+    li p {
+        line-height:1.5cm
+    }
+    p{
+        line-height:1.5cm;
+        margin-bottom:1cm
+    }
+    /*Formularios*/
+    
+    
+    
+    
+    textarea {
+        min-height:2.5cm;
+    }
+    
+    
+    /*Encabezado de la pagina web*/
+    .header {
+        top:0;
+        left:0;
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding:0;
+        margin:0;
+        
+    }
+       
+    .logo{
+        display:none;  
+    }
+    #enlace-top{
+        display: block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border: 1px solid rgba(25,25,25);
+    }
+    
+    #enlace-top:hover{
+        text-decoration:underline;
+    }
+    nav,form,.switch{
+        display: none;
+    }
+    a{
+        text-decoration: overline;
+    }
+    #busqueda_letras{
+        page-break-before:always;
+    }
+          
+    /*---------------------------------------------------------barra de arriba------------------------------------------------------------*/
+    
+    #titulo h1{
+        font-size: 30px;
+    }
+    #titulo p{
+      font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+      font-size: 20px;
+      text-justify:auto;
+      padding:0;
+    }
+    script{
+        display: none;
+    }
+    /*--------------------------------------------------titulo y desc-------------------------------------------------------*/
+    .bloque-2{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-left: 20em;
+        margin-right: 20em;
+        
+        
+        /*overflow: hidden;*/
+        
+        
+    }
+    
+    .tabla_contenidos{
+        
+        padding: 1.3em auto 1.3em ;
+        text-align: left;
+        display:block;
+        margin: 0% 10%;
+        border-width: 2px;
+        border-style: solid;
+        
+        margin-top:0;
+        margin-bottom: 0;
+        
+        
+    }
+    
+    .tabla_contenidos ul li{
+        
+        padding:0.3em 1em;
+    }
+    
+    body.dark .tabla_contenidos h2{
+        color: #F1F1F1;
+        
+    }
+    
+    .tabla_contenidos ul{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .tabla_contenidos ul li{
+        list-style:none;
+        padding-right:1.3em;
+    }
+    
+    .tabla_contenidos ul li a{
+        text-decoration: none;
+    }
+    
+    
+    .elemento{display: flex; justify-content: center; width: 100%;}
+    ul li ul {
+        padding-left: 20px;
+    }
+    /*---------------------------------------------------------tabla de contenidos------------------------------------------------------------*/
+    /*Busqueda por iniciales*/
+    
+    
+    /*---------------------------------------------------------busqueda de iniciales------------------------------------------------------------*/
+    .busqueda_visual1{
+        page-break-after: always;
+        display: block;
+        justify-content: center;
+        padding: 1em;
+        margin-left: auto;
+        margin-right:auto;
+        width: 100%;
+        
+        }
+    .busqueda_visual1 figure{
+        text-align: center;
+        display: block;
+        /*text-justify: center;
+        margin-left:auto;
+        margin-right: auto;
+        justify-content: center; */
+    }
+    #mapa-imagen{
+        width: 600px;
+        height: 600px;
+    }
+    
+    .busqueda_visual1 h2{
+        padding-bottom: 10px;
+        margin: 10px;
+        display: block;
+        text-align: center;
+    }
+    .busqueda_visual2{
+        display: none;
+    }
+    
+    /*---------------------------------------------------------busqueda visual------------------------------------------------------------*/
+    #temas-destacados{
+        justify-content: center;
+    
+    }
+    
+    #temas-destacados h2{
+        color: black;
+    
+    }
+    /*---------------------------------------------------------temas destacados------------------------------------------------------------*/
+    #temas-destacados{
+        background-color:rgba(192, 192, 192, 0.6);
+        border-color: rgba(0,124,191,255);
+        border-width: 0.1cm;
+        border-style: solid;
+        width:80%;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .articulo-destacado h3{
+        color: black;
+        
+    }
+    .articulo-destacado img{
+        display: none;
+        
+    }
+    .articulo-destacado{
+        
+        border-color: rgba(0,124,191,255);
+        border-radius: 0.3em;
+        margin:auto;
+        padding: 1em ; 
+        display:flex;
+        
+        
+        overflow: hidden;
+        
+    }
+    .articulo-destacado a{
+        color: #000000;
+        
+    }
+    .contenido{display: block; width:75%; text-align: justify;}
+    .contenido p{font-family:Arial, Helvetica, sans-serif;line-height: 1em;;}
+    footer{
+        page-break-before: always;
+        margin-top:1cm;
+        padding-top: 2.5cm;
+        display:block;
+        overflow: hidden;
+    }
+    .titulo-footer{
+        text-align:center;
+        text-decoration: underline black ;
+        font-weight:bold;
+        text-shadow: azure;
+        font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    }
+    .bloque{
+        width: 100%;
+        display: inline-flex; 
+        overflow: hidden;
+        padding: 2% 20%;
+    }
+    .bloque p{line-height: 0.7cm;}
+    .bloque img{
+        display: none;
+    }
+    #bloque-1-1{
+        
+        float: left;
+        display: block;
+        width: 100%;
+    }
+    
+    #bloque-1-2{
+        display: inline;
+        float:right;
+        width: 100%;
+        
+       
+        
+    }
+    #iconos-rrss{display: inline;}
+    #bloque-2-1{
+        width: 100%;
+        float: left;
+        
+    }
+    #bloque-2-2{
+        display: inline;
+        float:right;
+        width: 100%;
+    }
+    
+    footer figure {
+        display: inline-block;
+    }
+    
+    footer figure figcaption{
+        display:block;
+        text-align: center;
+    }
+    
+    /*--------------------------------------------------------footer------------------------------------------------------------*/
+    
+    .busqueda_visual{
+        width:80%;
+        height:auto;
+    }
+    .ruta-acces{
+        display: none;
+    }
+    section{
+        padding-top: 2cm;
+    }
+    iframe,footer{display: none;}
+
+    a:after {
+        content:" <" attr(href) ">";
+    }
+    a[href^=http]:after {
+        content:" <" attr(href) ">";
+    }
+    h3 + h3 {
+        page-break-before: always;
+    }
+    h3 {
+        page-break-before: always;
+    }    
+
+}
+/*Buscar opcion orphans*/
+/*Añadir criterio 4.1.8*/

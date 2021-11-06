@@ -4,7 +4,7 @@ En el desarrollo de la practica 6 se han realizado las siguientes tareas mencion
 - Creacion de css con letra grande 
 - Creacion de modo de impresion
 - Creacion del modo de alto contraste
-- Creacion del modo de alto contraste con letra grande
+- Creacion del modo de alto contraste con letra grande (modo accesible)
 - Correcciones en el diseño responsive
 - Cambios en algunos colores de la pagina
 - Inclusion de una barra superior buscadora
