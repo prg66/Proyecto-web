@@ -9,8 +9,6 @@
     
 }
 
-
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 body{
@@ -30,7 +28,7 @@ html {
     font-size:100%
 }
 
-article,aside,figcaption,figure,footer,header,menu,nav,section {
+article,aside,figcaption,figure,menu,nav,section {
  display:block;
 }
 
@@ -130,16 +128,6 @@ textarea {
 
 
 /*Encabezado de la pagina web*/
-.header {
-    top:0;
-    left:0;
-    list-style: none;
-    display: inline-block;
-    width: 100%;
-    padding:0;
-    margin:0;
-    
-}
    
 .logo{
     display:none;  
