@@ -1,0 +1,6 @@
+Esta carpeta contiene los siguientes items:
+- Ficheros .vtt con subtitulos del video en ingles y castellano
+- Documento con url de los videos en amara y youtube
+- Ficheros de la web
+- Documento html donde se ha ubicado el video dentro de la web
+- Informe de fotosensibilidad

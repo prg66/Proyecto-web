@@ -1,0 +1,10 @@
+Buenas a todos, mi nombre es Pablo Rocamora García y en este video vengo a mostrar la pagina web que mi compañero Mario Amorós y yo hemos desarrollado.
+La pagina se llama tu enciclopedia medica punto es y en ella hemos creado contenidos relacionados con el ambito de la salud.
+En la página de inicio, hemos añadido un formulario en la parte superior derecha para realizar busquedas rápidas.
+A continuacion, podemos encontrar la tabla de contenidos de la pagina de inicio, todas las ventanas de la web la tienen y es muy importante porque mejora considerablemente la navegacion.
+Si seguimos bajando podemos ver varios metodos para realizar búsqueda de enfermedades como la busqueda por iniciales, la busqueda visual por partes del cuerpo o la busqueda avanzada.
+Vamos a pulsar por ejemplo en la busqueda de enfermedades con la letra A, y vamos a consultar el artículo Accidente cerebrovascular o ictus. Aqui tenemos como ya he comentado la tabla de contenidos y el contenido del artículo propiamente dicho.
+Si seguimos navegando por la web, podemos ver otros artículos, un formulario de contacto, por si quieres contactar con nosotros o el mapa del sitio web desde el que puedes acceder a ciertas paginas de forma directa.
+Por último, cabe destacar que hemos añadido diversos modos de visualizacion como el modo oscuro, modo accesible o modo de alto contraste para mejorar la accesibilidad de la web.
+Voy a mostrar el modo oscuro para comprobar la diferencia con el modo de visualizacion por defecto. 
+Pues este sería el video, esperemos que os haya gustado, muchas gracias por llegar hasta aqui y hasta pronto!!
