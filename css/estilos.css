@@ -20,7 +20,7 @@ body.dark {
   
 body,p {
     font-family:Arial, Helvetica, sans-serif;
-    line-height:1;
+    line-height: 1.5em;;
 }
 
 html {
@@ -95,7 +95,7 @@ h4 {
 
 p {
     margin:0 0 1.42857em 0;
-    
+    font-size: 1.3em;
 }
 
 p img {
@@ -137,11 +137,12 @@ ul ul li {
 
 .contenido p{
     background-color: rgb(255, 255, 255);
-
+    font-size: 1.3em;
 }
 
 li p {
-    line-height:1.5em
+    line-height:1.5em;
+    font-size: 1.3em;
 }
 /*Formularios*/
 
@@ -308,6 +309,7 @@ input[type="checkbox"] {
   font-size: 20px;
   text-justify:auto;
   padding:0;
+  font-size: 1.3em;
 }
 body.dark #titulo h1{
     color: #F1F1F1;
@@ -318,6 +320,7 @@ body.dark #titulo p{
     text-justify:auto;
     padding:0;
     color: #F1F1F1;
+    font-size: 1.3em;
   }
 /*--------------------------------------------------------------titulo y desc-------------------------------------------------------*/
 .bloque-2{
@@ -370,6 +373,7 @@ body.dark .tabla_contenidos h2{
 
 .tabla_contenidos ul li a{
     text-decoration: none;
+    font-size: 1.3em;
 }
 
 
@@ -389,6 +393,7 @@ ul li ul {
     display:inline-block;
     margin:0;
     padding-left: 0px;
+    font-size: 1.3em;
     
 }
 
@@ -398,6 +403,7 @@ ul li ul {
     padding:10px 10px;
     margin-right:0px;
     text-decoration: none;
+    font-size: 1.3em;
     
     border: 1px solid rgba(25,25,25);
     /*background-color:rgb(179, 236, 157);
@@ -465,7 +471,7 @@ ul li ul {
 }
 /*---------------------------------------------------------temas destacados------------------------------------------------------------*/
 #temas-destacados{
-    background-color:rgba(191, 240, 248, 0.6);
+    background-color:rgba(255, 255, 255,1);
     border-color: rgba(0,124,191,255);
     border-width: 2px;
     border-style: solid;
@@ -492,6 +498,7 @@ ul li ul {
 }
 .articulo-destacado a{
     color: #000000;
+    font-size: 1.3em;
     
 }
 .contenido{display: block; width:75%; text-align: justify;}
@@ -676,6 +683,7 @@ section p{
     border-radius: 5px;
 
 }
+p a:hover{color: var(--color-encabezado);}
 body.dark label{
     color:blanchedalmond;
 }
@@ -2241,7 +2249,7 @@ em {
     }
     
     .tabla_contenidos ul li a:hover{
-        background-color:#008f70;
+        background-color:#343D5B;
         color: #ddf8f6;
     }
     
