@@ -529,6 +529,11 @@ footer{
     display: inline-flex; 
     overflow: hidden;
     padding: 2% 20%;
+
+}
+.bloque a{
+    color: black;
+    
 }
 .bloque p{line-height: 0.7em;}
 #bloque-1-1{
@@ -773,7 +778,10 @@ body.dark label{
     #descripcion_sitio {
         font-size: 100px;
     }
-    
+    .bloque a{
+        color: black;
+        
+    }
     
     /* Medium devices (landscape tablets, 768px and up) */
     
@@ -1465,7 +1473,9 @@ body.dark label{
         background: none;
         color: #fff;
       }
+
     }
+
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 360px) and (max-width:1000px) {
 *{
@@ -1474,7 +1484,10 @@ body.dark label{
     
 }
 
-
+.bloque a{
+    color: black;
+    
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
@@ -2167,7 +2180,7 @@ em {
       }
     }
     :root{
-        --color-encabezado:rgba(0,124,191,255);
+        --color-encabezado:rgba(0,126,191,255);
         --color-fondo:rgba(255,255,255,1);
     }
     
@@ -2214,7 +2227,7 @@ em {
     }
     
     #barra-superior-1{
-        background-color: var(--color-encabezado);
+        background-color:rgba(0,100,200,255);
     }
     
     #enlace-top{
@@ -2226,11 +2239,11 @@ em {
     }
     
     header nav ul{
-        background-color:rgba(0,130,200,255);
+        background-color:rgba(0,100,200,255);
     }
     
     header ul li a{
-        background-color: rgba(0,130,200,255);
+        background-color: rgba(0,100,200,255);
         color:#FFF;
     }
     
